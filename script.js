@@ -10,8 +10,8 @@ const openNavMen = () => {
     nav.classList.toggle('nav-toggle')
 }
 const outsideNav = (e) => {
-    if(nav.contains(e.target)){
-        console.log(e.target);
+    if(!nav.contains(e.target) && !openNavBtn.contains(e.target)){
+        nav.classList.add('nav-toggle')
     }
 }
 

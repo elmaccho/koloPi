@@ -131,8 +131,17 @@ body{
             gap: 25px;
 
             position: absolute;
-            top:40%;
-            transform: translateY(-50%);
+            bottom:0;
+            height: 70%;
+            gap: 20px;
+
+            position: absolute;
+            bottom:0;
+
+            .solidBtn{
+                position: absolute;
+                bottom: 10px;
+            }
         }
     }
 }
@@ -172,6 +181,7 @@ body{
         transition: 0.3s;
 
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
 
         .closeNavBtn{
@@ -202,11 +212,11 @@ body{
         .nav_links{
             display: flex;
             flex-direction: column;
+            height: 70%;
             gap: 20px;
 
             position: absolute;
-            top:50%;
-            transform: translateY(-50%);
+            bottom:0;
 
             .classicBtn{
                 font-size: 4vw;
@@ -214,25 +224,28 @@ body{
 
             .solidBtn{
                 font-size: 4vw;
+                position: absolute;
+                bottom: 10px;
             }
         }
     }
 }
 
 @media screen and (min-width: 769px){
+    .openNavBtn{
+        display: none;
+    }
+
     nav{
-        padding: 15px 45px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        padding: 15px 45px;
 
         .closeNavBtn{
             display: none;
         }
-        .openNavBtn{
-            display: none;
-        }
+
 
         h1{
             font-size: 3.5vw;
@@ -242,7 +255,7 @@ body{
             display: flex;
             justify-content: right;
             align-items: center;
-            gap: 30px;
+            gap: 5vw;
 
             .classicBtn{
                 font-size: 1.5vw;

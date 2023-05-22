@@ -115,8 +115,15 @@ body {
     flex-direction: column;
     gap: 25px;
     position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
+    bottom: 0;
+    height: 70%;
+    gap: 20px;
+    position: absolute;
+    bottom: 0;
+  }
+  nav .nav_links .solidBtn {
+    position: absolute;
+    bottom: 10px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -149,6 +156,7 @@ body {
     box-sizing: border-box;
     transition: 0.3s;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
   }
   nav .closeNavBtn {
@@ -175,29 +183,31 @@ body {
   nav .nav_links {
     display: flex;
     flex-direction: column;
+    height: 70%;
     gap: 20px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
   }
   nav .nav_links .classicBtn {
     font-size: 4vw;
   }
   nav .nav_links .solidBtn {
     font-size: 4vw;
+    position: absolute;
+    bottom: 10px;
   }
 }
 @media screen and (min-width: 769px) {
+  .openNavBtn {
+    display: none;
+  }
   nav {
-    padding: 15px 45px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 45px;
   }
   nav .closeNavBtn {
-    display: none;
-  }
-  nav .openNavBtn {
     display: none;
   }
   nav h1 {
@@ -207,7 +217,7 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 30px;
+    gap: 5vw;
   }
   nav .nav_links .classicBtn {
     font-size: 1.5vw;
