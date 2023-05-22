@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$main1: #17597F;
+$main2: #3787C4;
+$text: #232323;
+$text2: white;
+$background: white;
+$background2: #232323;
+
+
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.classicBtn{
+    position: relative;
+    color:$text;
+    text-decoration: none;
+    font-size: 5.5vw;
+    transition: 0.3s;
+    width: max-content;
+}
+.classicBtn:hover{
+    color: $main2;
+}
+.classicBtn:after{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 2px;
+    transition: 0.3s;
+}
+.classicBtn:hover:after{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    content: '';
+    width: 100%;
+    background-color: $main2;
+    transition: 0.3s;
+}
+
+.solidBtn{
+    background-color: $background2;
+    color: $text2;
+    text-decoration: none;
+    padding: 2vw 5vw;
+    border-radius: 3.5vw 0 3.5vw 0;
+    font-size: 5.5vw;
+    transition: 0.3s;
+    width: max-content;
+}
+.solidBtn:hover{
+    background-color: $background;
+    color:$text;
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 5px 0px;
+}
+
+
+// mobile
+@media screen and (max-width: 480px){
+
+    .nav-toggle{
+        transform: translateX(-100%);
+    }
+
+    .openNavBtn{
+        background-color: transparent;
+        border: none;
+        font-size: 9vw;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        i{
+            pointer-events: none;
+        }
+    }
+    .openNavBtn:hover{
+        opacity: 75%;
+    }
+
+    nav{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: $background;
+        position: fixed;
+        width: 45%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: 0.3s;
+
+        display: flex;
+        flex-direction: column;
+
+        .closeNavBtn{
+            border:none;
+            background-color: transparent;
+
+            font-size: 9vw;
+            position: absolute;
+            top:5px;
+            right:5px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            i{
+                pointer-events: none;
+            }
+        }
+        .closeNavBtn:hover{
+            opacity: 75%;
+        }
+
+        h1{
+            font-size: 8vw;
+            position: absolute;
+            top: 5%;
+        }
+
+        .nav_links{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            position: absolute;
+            top:40%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// tablet
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .nav-toggle{
+        transform: translateX(-100%);
+    }
+
+    .openNavBtn{
+        background-color: transparent;
+        border: none;
+        font-size: 7vw;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        i{
+            pointer-events: none;
+        }
+    }
+    .openNavBtn:hover{
+        opacity: 75%;
+    }
+
+    nav{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: $background;
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: 0.3s;
+
+        display: flex;
+        flex-direction: column;
+
+        .closeNavBtn{
+            border:none;
+            background-color: transparent;
+
+            font-size: 7vw;
+            position: absolute;
+            top:5px;
+            right:5px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            i{
+                pointer-events: none;
+            }
+        }
+        .closeNavBtn:hover{
+            opacity: 75%;
+        }
+
+        h1{
+            font-size: 7vw;
+            position: absolute;
+            top: 5%;
+        }
+
+        .nav_links{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+
+            .classicBtn{
+                font-size: 4vw;
+            }
+
+            .solidBtn{
+                font-size: 4vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px){
+    nav{
+        padding: 15px 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .closeNavBtn{
+            display: none;
+        }
+        .openNavBtn{
+            display: none;
+        }
+
+        h1{
+            font-size: 3.5vw;
+        }
+
+        .nav_links{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            gap: 30px;
+
+            .classicBtn{
+                font-size: 1.5vw;
+            }
+
+            .solidBtn{
+                font-size: 1.5vw;
+                padding:0.5vw 2vw;
+                border-radius: 1.5vw 0 1.5vw 0;
+            }
+        }
+    }
+}
+// desktop
