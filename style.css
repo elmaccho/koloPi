@@ -5,6 +5,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  min-height: 200vh;
 }
 
 .classicBtn {
@@ -201,11 +202,21 @@ body {
   .openNavBtn {
     display: none;
   }
+  .activeNav {
+    position: fixed;
+    transition: 0.3s;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 5px 45px;
+    background-color: white;
+  }
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 45px;
+    box-sizing: border-box;
+    transition: 0.3s;
   }
   nav .closeNavBtn {
     display: none;

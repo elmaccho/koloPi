@@ -14,7 +14,15 @@ const outsideNav = (e) => {
         nav.classList.add('nav-toggle')
     }
 }
+const navScroll = () => {
+    if(window.pageYOffset >= 1){
+        nav.classList.add('activeNav')
+    } else {
+        nav.classList.remove('activeNav')
+    }
+}
 
 closeNavBtn.addEventListener('click', closeNavMen)
 openNavBtn.addEventListener('click', openNavMen)
 document.addEventListener('click', outsideNav)
+window.addEventListener('scroll', navScroll)

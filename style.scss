@@ -13,6 +13,7 @@ $background2: #232323;
 }
 body{
     font-family: 'Poppins', sans-serif;
+    min-height: 200vh;
 }
 
 .classicBtn{
@@ -236,16 +237,26 @@ body{
         display: none;
     }
 
+    .activeNav{
+        position: fixed;
+        transition: 0.3s;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        padding: 5px 45px;
+        background-color: $background;
+    }
+
     nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 15px 45px;
+        box-sizing: border-box;
+        transition: 0.3s;
 
         .closeNavBtn{
             display: none;
         }
-
 
         h1{
             font-size: 3.5vw;
