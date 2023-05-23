@@ -2,6 +2,10 @@ const closeNavBtn = document.querySelector('.closeNavBtn')
 const openNavBtn = document.querySelector('.openNavBtn')
 const nav = document.querySelector('nav')
 
+const navLinks = document.querySelectorAll('.nav_links a')
+
+console.log(navLinks);
+
 
 const closeNavMen = () => {
     nav.classList.toggle('nav-toggle')
@@ -49,6 +53,9 @@ const navHighlight = () => {
     window.addEventListener("scroll", highlightNavLink);
 }
 
+for(let navLink of navLinks){
+    navLink.addEventListener('click', closeNavMen)
+}
 closeNavBtn.addEventListener('click', closeNavMen)
 openNavBtn.addEventListener('click', openNavMen)
 document.addEventListener('click', outsideNav)
