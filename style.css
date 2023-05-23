@@ -453,7 +453,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 70px;
+    padding-top: 70px;
   }
   .header .header-logo {
     width: 50vw;
@@ -483,6 +483,7 @@ body {
   }
   .about-us {
     display: flex;
+    padding: 35px 0;
   }
   .about-us .img-wrapper {
     width: 45%;

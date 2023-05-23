@@ -21,36 +21,7 @@ const navScroll = () => {
         nav.classList.remove('activeNav')
     }
 }
-// const navHighlight = () => {
-//     var navLinks = document.querySelectorAll(".nav_links a");
-//     var sections = document.querySelectorAll("section");
-  
-//     function highlightNavLink() {
-//       var scrollPosition = window.pageYOffset;
-  
-//       sections.forEach(function(section, index) {
-//         if (
-//           scrollPosition >= section.offsetTop &&
-//           scrollPosition < section.offsetTop + section.offsetHeight
-//         ) {
-//           navLinks.forEach(function(navLink) {
-//             navLink.classList.remove("active");
-//           });
-//           navLinks[index].classList.add("active");
-//         }
-//       });
-//     }
-  
-//     window.addEventListener("scroll", highlightNavLink);
-// }
-
-closeNavBtn.addEventListener('click', closeNavMen)
-openNavBtn.addEventListener('click', openNavMen)
-document.addEventListener('click', outsideNav)
-window.addEventListener('scroll', navScroll)
-// document.addEventListener("scroll", navHighlight);
-
-document.addEventListener("DOMContentLoaded", function() {
+const navHighlight = () => {
     var navLinks = document.querySelectorAll(".nav_links a");
     var sections = document.querySelectorAll("section");
   
@@ -76,5 +47,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     window.addEventListener("scroll", highlightNavLink);
-  });
+}
+
+closeNavBtn.addEventListener('click', closeNavMen)
+openNavBtn.addEventListener('click', openNavMen)
+document.addEventListener('click', outsideNav)
+window.addEventListener('scroll', navScroll)
+document.addEventListener("DOMContentLoaded", navHighlight);
   
