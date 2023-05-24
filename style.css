@@ -636,14 +636,14 @@ body {
   .projects .title .line-left span {
     position: absolute;
     width: 100%;
-    height: 1.2vw;
+    height: 1vw;
     background-color: #232323;
   }
   .projects .title .line-left span::after {
     content: "";
     position: absolute;
-    width: 3vw;
-    height: 3vw;
+    width: 2.6vw;
+    height: 2.6vw;
     right: 0;
     top: 50%;
     transform: translate(50%, -50%) rotate(45deg);
@@ -658,17 +658,79 @@ body {
   .projects .title .line-right span {
     position: absolute;
     width: 100%;
-    height: 1.2vw;
+    height: 1vw;
     background-color: #232323;
   }
   .projects .title .line-right span::before {
     content: "";
     position: absolute;
-    width: 3vw;
-    height: 3vw;
+    width: 2.6vw;
+    height: 2.6vw;
     left: 0;
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #232323;
+  }
+  .projects .projects-wrapper {
+    padding: 50px 75px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 35px;
+    justify-items: center;
+  }
+  .projects .projects-wrapper .box-wrapper {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 23vw;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    gap: 25px;
+    position: relative;
+  }
+  .projects .projects-wrapper .box-wrapper h1 {
+    font-size: 1.5vw;
+  }
+  .projects .projects-wrapper .box-wrapper p {
+    color: #232323;
+    max-width: 25vw;
+    background-color: tomato;
+  }
+  .projects .projects-wrapper .box-wrapper .photo {
+    width: 100%;
+    height: 12vw;
+    transition: 0.3s;
+    background-color: rgba(225, 225, 225, 0.437);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .projects-wrapper .box-wrapper .hashtags {
+    margin-top: 25px;
+    padding: 5px 0;
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+  .projects .projects-wrapper .box-wrapper .hashtags hr {
+    border: 1px solid rgba(35, 35, 35, 0.1490196078);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .projects .projects-wrapper .box-wrapper .hashtags span {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #232323;
+  }
+  .projects .projects-wrapper .box-wrapper .hashtags span:hover {
+    color: #3787C4;
+  }
+  .projects .projects-wrapper .box-wrapper:hover {
+    transform: scale(1.05);
   }
 }/*# sourceMappingURL=style.css.map */

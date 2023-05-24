@@ -750,15 +750,15 @@ body{
                 span{
                     position: absolute;
                     width: 100%;
-                    height: 1.2vw;
+                    height: 1vw;
                     background-color: #232323;
                   }
 
                 span::after {
                     content: "";
                     position: absolute;
-                    width: 3vw;
-                    height: 3vw;
+                    width: 2.6vw;
+                    height: 2.6vw;
                     right: 0;
                     top: 50%;
                     transform: translate(50%, -50%) rotate(45deg);
@@ -775,14 +775,14 @@ body{
                 span{
                     position: absolute;
                     width: 100%;
-                    height: 1.2vw;
+                    height: 1vw;
                     background-color: #232323;
                   }
                   span::before {
                     content: "";
                     position: absolute;
-                    width: 3vw;
-                    height: 3vw;
+                    width: 2.6vw;
+                    height: 2.6vw;
                     left: 0;
                     top: 50%;
                     transform: translate(-50%, -50%) rotate(45deg);
@@ -791,6 +791,83 @@ body{
             }
 
         }
+
+        .projects-wrapper {
+            padding: 50px 75px;
+            height: 100%;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 35px;
+            justify-items: center;
+
+            .box-wrapper {
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+              max-width: 23vw;
+              padding: 25px 30px;
+              display: flex;
+              flex-direction: column;
+              transition: 0.3s;
+              gap: 25px;
+              position: relative;
+          
+              h1 {
+                font-size: 1.5vw;
+              }
+          
+              p {
+                color:$text;
+                max-width: 25vw;
+                background-color: tomato;
+              }
+          
+              .photo {
+                width: 100%;
+                height: 12vw;
+                transition: 0.3s;
+                background-color: rgba(225, 225, 225, 0.437);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+          
+          
+              .hashtags {
+                margin-top: 25px;
+                padding: 5px 0;
+                display: flex;
+                gap: 10px;
+                position: relative;
+          
+                hr {
+                  border: 1px solid #23232326;
+                  position: absolute;
+                  width: 100%;
+                  top: 0;
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+          
+                span {
+                  transition: 0.3s;
+                  cursor: pointer;
+                  color: $text;
+                }
+                span:hover {
+                  color: $main2;
+                }
+              }
+          
+
+            }
+            .box-wrapper:hover{
+                transform: scale(1.05);
+            }
+          }
+          
+          
+          
 
     }
 }
