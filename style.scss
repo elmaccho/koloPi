@@ -33,7 +33,7 @@ $background2: #232323;
 }
 body{
     font-family: 'Poppins', sans-serif;
-    min-height: 200vh;
+    // min-height: 200vh;
     display: flex;
     flex-direction: column;
     gap: 175px;
@@ -876,6 +876,7 @@ body{
     }
 
     .projects{
+
         .title{
                 display: flex;
                 justify-content: center;

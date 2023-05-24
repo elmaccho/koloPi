@@ -22,7 +22,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  min-height: 200vh;
   display: flex;
   flex-direction: column;
   gap: 175px;
