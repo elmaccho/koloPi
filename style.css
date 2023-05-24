@@ -274,19 +274,19 @@ body {
     align-items: center;
   }
   .projects .title h1 {
-    font-size: 8vw;
+    font-size: 12vw;
     color: #232323;
   }
   .projects .title .line-left {
     height: 5px;
-    width: 28%;
+    width: 20%;
     position: absolute;
     left: 0;
   }
   .projects .title .line-left span {
     position: absolute;
     width: 100%;
-    height: 0.8vw;
+    height: 1.5vw;
     background-color: #232323;
   }
   .projects .title .line-left span::after {
@@ -301,14 +301,14 @@ body {
   }
   .projects .title .line-right {
     height: 5px;
-    width: 28%;
+    width: 20%;
     position: absolute;
     right: 0;
   }
   .projects .title .line-right span {
     position: absolute;
     width: 100%;
-    height: 0.8vw;
+    height: 1.5vw;
     background-color: #232323;
   }
   .projects .title .line-right span::before {

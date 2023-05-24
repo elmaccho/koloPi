@@ -313,22 +313,22 @@ body{
             align-items: center;
 
             h1{
-                font-size: 8vw;
+                font-size: 12vw;
                 color: $text;
             }
 
             .line-left {
                 height: 5px;
-                width: 28%;
+                width: 20%;
                 position: absolute;
                 left:0;
 
                 span{
                     position: absolute;
                     width: 100%;
-                    height: 0.8vw;
+                    height: 1.5vw;
                     background-color: #232323;
-                  }
+                }
 
                 span::after {
                     content: "";
@@ -344,17 +344,18 @@ body{
 
             .line-right{
                 height: 5px;
-                width: 28%;
+                width: 20%;
                 position: absolute;
                 right:0;
 
                 span{
                     position: absolute;
                     width: 100%;
-                    height: 0.8vw;
+                    height: 1.5vw;
                     background-color: #232323;
-                  }
-                  span::before {
+                }
+
+                span::before {
                     content: "";
                     position: absolute;
                     width: 4vw;
