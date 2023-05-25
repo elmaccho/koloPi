@@ -37,6 +37,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 175px;
+    overflow-x: hidden;
 }
 
 .header-logo{
@@ -264,6 +265,15 @@ body{
                 color: $text3;
             }
         }
+
+        .blob_1{
+            position: absolute;
+            transform: translate(-65%, -75%);
+        }
+        .blob_2{
+            position: absolute;
+            transform: translate(50%, 95%);
+        }
     }
 
     .about-us{
@@ -302,6 +312,12 @@ body{
                 padding: 15px 0;
                 font-size: 4.5vw;
             }
+        }
+
+        .blob_3{
+            position: absolute;
+            transform: translate(-50%, -10%);
+            z-index: -1;
         }
     }
 
@@ -460,6 +476,7 @@ body{
         left: 5px;
         cursor: pointer;
         transition: 0.3s;
+        z-index: 1;
 
         i{
             pointer-events: none;
@@ -565,6 +582,15 @@ body{
                 color: $text3;
             }
         }
+
+        .blob_1{
+            position: absolute;
+            transform: translate(-65%, -45%);
+        }
+        .blob_2{
+            position: absolute;
+            transform: translate(50%, 80%);
+        }
     }
 
     .about-us{
@@ -603,6 +629,12 @@ body{
                 padding: 15px 0;
                 font-size: 3.5vw;
             }
+        }
+
+        .blob_3{
+            position: absolute;
+            transform: translate(-50%, 0%);
+            z-index: -1;
         }
     }
 
@@ -834,6 +866,16 @@ body{
                 font-size: 1.3vw;
                 text-align: left;
             }
+        }
+
+        .blob_1{
+            position: absolute;
+            transform: translate(-50%, -28%) scale(55%);
+        }
+        .blob_2{
+            position: absolute;
+            top: 0;
+            transform: translate(50%, 10%) scale(60%);
         }
     }
 
