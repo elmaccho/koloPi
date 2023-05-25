@@ -710,7 +710,7 @@ body {
   }
   .about-us {
     display: flex;
-    padding: 35px 0;
+    padding: 55px 0;
   }
   .about-us .img-wrapper {
     width: 45%;
@@ -738,6 +738,9 @@ body {
   .about-us .text-wrapper p {
     color: #232323;
     font-size: 1.5vw;
+  }
+  .projects {
+    padding-top: 100px;
   }
   .projects .title {
     display: flex;
