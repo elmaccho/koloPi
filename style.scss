@@ -915,6 +915,12 @@ body{
                 font-size: 1.5vw;
             }
         }
+
+        .blob_3{
+            position: absolute;
+            z-index: -1;
+            transform: translate(-50%, -10%) scale(75%);
+        }
     }
 
     .projects{

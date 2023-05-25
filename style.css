@@ -776,6 +776,11 @@ body {
     color: #232323;
     font-size: 1.5vw;
   }
+  .about-us .blob_3 {
+    position: absolute;
+    z-index: -1;
+    transform: translate(-50%, -10%) scale(75%);
+  }
   .projects {
     padding-top: 100px;
   }
