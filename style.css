@@ -283,10 +283,12 @@ body {
     align-items: center;
     padding-bottom: 25px;
   }
+
   .news .title h1 {
     font-size: 12vw;
     color: #232323;
   }
+
   .news .title .line-left {
     height: 5px;
     width: 12%;
@@ -309,6 +311,7 @@ body {
     transform: translate(50%, -50%) rotate(45deg);
     background-color: #232323;
   }
+
   .news .title .line-right {
     height: 5px;
     width: 12%;
@@ -331,6 +334,7 @@ body {
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #232323;
   }
+
   .news-wrapper {
     padding: 50px 25px;
     height: 100%;
@@ -341,6 +345,7 @@ body {
     background: #E7E7E7;
     box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.25);
   }
+
   .news-wrapper .news-background {
     position: relative;
     background: url("https://d-art.ppstatic.pl/kadry/k/r/1/d8/9d/62e90b47da0be_o_original.jpg");
@@ -354,6 +359,7 @@ body {
     width: 90%;
     gap: 2vw;
   }
+
   .news-wrapper .news-background .news-box {
     width: 100%;
     height: 40vw;
@@ -365,10 +371,12 @@ body {
     opacity: 0.5;
     transition: 0.5s;
   }
+
   .news-wrapper .news-background .news-box:hover {
     background: rgba(35, 35, 35, 0.79);
     opacity: 1;
   }
+
   .news-wrapper .news-background .content {
     position: relative;
     width: 100%;
@@ -379,6 +387,11 @@ body {
     transform: scale(0);
     transition: 0.5s;
   }
+
+  .news-wrapper .news-background:hover .content {
+    transform: scale(1);
+  }
+
   .news-wrapper .news-background .content h1 {
     position: relative;
     color: #fff;
@@ -388,15 +401,17 @@ body {
     font-size: 6vw;
     line-height: 28px;
   }
+
   .news-wrapper .news-background .content p {
     position: relative;
     max-width: 80%;
     left: 15px;
     top: 10px;
     font-size: 4vw;
-    line-height: 16px;
+    line-height:16px;
     color: #A7A7A7;
   }
+
   .news-wrapper .news-background .content .btn {
     position: relative;
     height: 6vw;
@@ -417,13 +432,11 @@ body {
     width: max-content;
     max-width: 50vw;
   }
+
   .news-wrapper .news-background .content .btn:hover {
     background: #fff;
     color: #17597F;
     box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 5px 0px;
-  }
-  .news-wrapper .news-background:hover .content {
-    transform: scale(1);
   }
   .projects .title {
     display: flex;
@@ -592,6 +605,7 @@ body {
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #232323;
   }
+
   .team .team-wrapper {
     padding: 50px 25px;
     height: 100%;
@@ -601,6 +615,7 @@ body {
     justify-content: space-evenly;
     gap: 45px;
   }
+
   .team .team-wrapper .team-box {
     position: relative;
     background: #F7F7F7;
@@ -610,10 +625,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width:  45%;
     height: 70vw;
     gap: 2vw;
   }
+
   .team .team-wrapper .team-box .circle {
     position: relative;
     width: 20vw;
@@ -622,6 +638,7 @@ body {
     background: #3787C4;
     border-radius: 50%;
   }
+
   .team .team-wrapper .team-box .name {
     position: relative;
     width: 90%;
@@ -631,6 +648,7 @@ body {
     text-align: center;
     color: #232323;
   }
+
   .team .team-wrapper .team-box .description {
     position: relative;
     width: 90%;
@@ -796,10 +814,12 @@ body {
     align-items: center;
     padding-bottom: 25px;
   }
+
   .news .title h1 {
     font-size: 8vw;
     color: #232323;
   }
+
   .news .title .line-left {
     height: 5px;
     width: 23%;
@@ -822,6 +842,7 @@ body {
     transform: translate(50%, -50%) rotate(45deg);
     background-color: #232323;
   }
+
   .news .title .line-right {
     height: 5px;
     width: 23%;
@@ -844,6 +865,7 @@ body {
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #232323;
   }
+
   .news-wrapper {
     padding: 50px 25px;
     height: 100%;
@@ -854,6 +876,7 @@ body {
     background: #E7E7E7;
     box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.25);
   }
+
   .news-wrapper .news-background {
     position: relative;
     background: url("https://d-art.ppstatic.pl/kadry/k/r/1/d8/9d/62e90b47da0be_o_original.jpg");
@@ -867,6 +890,7 @@ body {
     width: 80%;
     gap: 2vw;
   }
+
   .news-wrapper .news-background .news-box {
     width: 100%;
     height: 40vw;
@@ -878,10 +902,12 @@ body {
     opacity: 0.5;
     transition: 0.5s;
   }
+
   .news-wrapper .news-background .news-box:hover {
     background: rgba(35, 35, 35, 0.79);
     opacity: 1;
   }
+
   .news-wrapper .news-background .content {
     position: relative;
     width: 100%;
@@ -892,6 +918,11 @@ body {
     transform: scale(0);
     transition: 0.5s;
   }
+
+  .news-wrapper .news-background:hover .content {
+    transform: scale(1);
+  }
+
   .news-wrapper .news-background .content h1 {
     position: relative;
     color: #fff;
@@ -901,6 +932,7 @@ body {
     font-size: 4.3vw;
     line-height: 28px;
   }
+
   .news-wrapper .news-background .content p {
     position: relative;
     max-width: 60%;
@@ -910,6 +942,7 @@ body {
     line-height: 16px;
     color: #A7A7A7;
   }
+
   .news-wrapper .news-background .content .btn {
     position: relative;
     height: 6vw;
@@ -930,13 +963,11 @@ body {
     width: max-content;
     max-width: 50vw;
   }
+
   .news-wrapper .news-background .content .btn:hover {
     background: #fff;
     color: #17597F;
     box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 5px 0px;
-  }
-  .news-wrapper .news-background:hover .content {
-    transform: scale(1);
   }
   .projects .title {
     display: flex;
@@ -1105,6 +1136,7 @@ body {
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #232323;
   }
+
   .team .team-wrapper {
     padding: 50px 25px;
     height: 100%;
@@ -1114,6 +1146,7 @@ body {
     justify-content: space-evenly;
     gap: 45px;
   }
+
   .team .team-wrapper .team-box {
     position: relative;
     background: #F7F7F7;
@@ -1123,10 +1156,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width:  40%;
     height: 60vw;
     gap: 2vw;
   }
+
   .team .team-wrapper .team-box .circle {
     position: relative;
     width: 20vw;
@@ -1135,6 +1169,7 @@ body {
     background: #3787C4;
     border-radius: 50%;
   }
+
   .team .team-wrapper .team-box .name {
     position: relative;
     width: 90%;
@@ -1144,6 +1179,7 @@ body {
     text-align: center;
     color: #232323;
   }
+
   .team .team-wrapper .team-box .description {
     position: relative;
     width: 90%;
@@ -1282,10 +1318,12 @@ body {
     align-items: center;
     padding-bottom: 25px;
   }
+
   .news .title h1 {
     font-size: 5vw;
     color: #232323;
   }
+
   .news .title .line-left {
     height: 5px;
     width: 30%;
@@ -1330,6 +1368,7 @@ body {
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #232323;
   }
+
   .news-wrapper {
     padding: 50px 25px;
     height: 100%;
@@ -1340,6 +1379,7 @@ body {
     background: #E7E7E7;
     box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.25);
   }
+
   .news-wrapper .news-background {
     position: relative;
     background: url("https://d-art.ppstatic.pl/kadry/k/r/1/d8/9d/62e90b47da0be_o_original.jpg");
@@ -1353,6 +1393,7 @@ body {
     max-width: 23vw;
     gap: 2vw;
   }
+
   .news-wrapper .news-background .news-box {
     width: 300px;
     max-width: 23vw;
@@ -1365,10 +1406,12 @@ body {
     opacity: 0.5;
     transition: 0.5s;
   }
+
   .news-wrapper .news-background .news-box:hover {
     background: rgba(35, 35, 35, 0.79);
     opacity: 1;
   }
+
   .news-wrapper .news-background .content {
     position: relative;
     width: 300px;
@@ -1379,6 +1422,11 @@ body {
     transform: scale(0);
     transition: 0.5s;
   }
+
+  .news-wrapper .news-background:hover .content {
+    transform: scale(1);
+  }
+
   .news-wrapper .news-background .content h1 {
     position: relative;
     color: #fff;
@@ -1388,6 +1436,7 @@ body {
     font-size: 1.5vw;
     line-height: 28px;
   }
+
   .news-wrapper .news-background .content p {
     position: relative;
     max-width: 18vw;
@@ -1397,6 +1446,7 @@ body {
     line-height: 16px;
     color: #A7A7A7;
   }
+
   .news-wrapper .news-background .content .btn {
     position: relative;
     height: 2vw;
@@ -1417,13 +1467,11 @@ body {
     width: max-content;
     max-width: 18vw;
   }
+
   .news-wrapper .news-background .content .btn:hover {
     background: #fff;
     color: #17597F;
     box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 5px 0px;
-  }
-  .news-wrapper .news-background:hover .content {
-    transform: scale(1);
   }
   .projects {
     padding-top: 100px;
@@ -1595,6 +1643,7 @@ body {
     transform: translate(-50%, -50%) rotate(45deg);
     background-color: #232323;
   }
+
   .team .team-wrapper {
     padding: 50px 25px;
     height: 100%;
@@ -1604,6 +1653,7 @@ body {
     justify-content: space-evenly;
     gap: 4.5vw;
   }
+
   .team .team-wrapper .team-box {
     position: relative;
     height: 65vh;
@@ -1617,6 +1667,8 @@ body {
     max-width: 25vw;
     gap: 1.5vw;
   }
+
+
   .team .team-wrapper .team-box .circle {
     position: relative;
     width: 13vw;
@@ -1625,6 +1677,7 @@ body {
     background: #3787C4;
     border-radius: 50%;
   }
+
   .team .team-wrapper .team-box .name {
     position: relative;
     max-width: 20vw;
@@ -1634,6 +1687,7 @@ body {
     text-align: center;
     color: #232323;
   }
+
   .team .team-wrapper .team-box .description {
     position: relative;
     max-width: 20vw;
