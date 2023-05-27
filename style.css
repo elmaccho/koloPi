@@ -236,14 +236,25 @@ body {
     font-size: 4.5vw;
     color: rgb(70, 70, 70);
   }
-  .header .blob_1 {
+
+  .header .blobs{
     position: absolute;
-    transform: translate(-65%, -75%);
+    top:0;
+    left:0;
+
+    width: 100%;
+    min-height: 140vh;
+    overflow: hidden;
   }
-  .header .blob_2 {
+  .header .blobs .blob_1{
     position: absolute;
-    transform: translate(50%, 95%);
+    transform: translate(-60%, -50%);
   }
+  .header .blobs .blob_2{
+    position: absolute;
+    transform: translate(60%, 120%);
+  }
+
   .about-us {
     display: flex;
     flex-direction: column;
@@ -276,11 +287,19 @@ body {
     padding: 15px 0;
     font-size: 4.5vw;
   }
-  .about-us .blob_3 {
+
+  .about-us .blobs{
     position: absolute;
-    transform: translate(-50%, -10%);
+    width: 100%;
+    min-height: 100vh;
+  }
+  .about-us .blobs .blob_3 {
+    position: absolute;
+    transform: translate(-50%, 20%);
     z-index: -1;
   }
+
+
   .news .title {
     display: flex;
     justify-content: center;
@@ -767,11 +786,20 @@ body {
     font-size: 3.5vw;
     color: rgb(70, 70, 70);
   }
-  .header .blob_1 {
+  .header .blobs{
     position: absolute;
-    transform: translate(-65%, -45%);
+    top:0;
+    left:0;
+
+    width: 100%;
+    min-height: 180vh;
+    overflow: hidden;
   }
-  .header .blob_2 {
+  .header .blobs .blob_1{
+    position: absolute;
+    transform: translate(-60%, -50%);
+  }
+  .header .blobs .blob_2{
     position: absolute;
     transform: translate(50%, 80%);
   }
@@ -1270,16 +1298,22 @@ body {
     font-size: 1.3vw;
     text-align: left;
   }
-  .header .blob_1 {
+  .header .blobs{
     position: absolute;
-    transform: translate(-50%, -28%) scale(55%);
-    z-index: -1;
+    top:0;
+    left:0;
+
+    width: 100%;
+    min-height: 150vh;
+    overflow: hidden;
   }
-  .header .blob_2 {
+  .header .blobs .blob_1{
     position: absolute;
-    top: 0;
-    transform: translate(50%, 5%) scale(60%);
-    z-index: -1;
+    transform: translate(-50%, -50%) scale(50%);
+  }
+  .header .blobs .blob_2{
+    position: absolute;
+    transform: translate(50%, 10%) scale(45%);
   }
   .about-us {
     display: flex;
@@ -1312,10 +1346,16 @@ body {
     color: #232323;
     font-size: 1.5vw;
   }
-  .about-us .blob_3 {
+  .about-us .blobs {
     position: absolute;
+    left:0;
+
+    width: 100%;
+    overflow: hidden;
     z-index: -1;
-    transform: translate(-50%, -10%) scale(75%);
+  }
+  .about-us .blobs .blob_3{
+    transform: translate(-50%, -5%) scale(50%);
   }
   .news .title {
     display: flex;
