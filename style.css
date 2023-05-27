@@ -1273,11 +1273,13 @@ body {
   .header .blob_1 {
     position: absolute;
     transform: translate(-50%, -28%) scale(55%);
+    z-index: -1;
   }
   .header .blob_2 {
     position: absolute;
     top: 0;
-    transform: translate(50%, 10%) scale(60%);
+    transform: translate(50%, 5%) scale(60%);
+    z-index: -1;
   }
   .about-us {
     display: flex;
