@@ -400,11 +400,11 @@ body {
   }
 
   .news-wrapper .news-background .content {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 150px;
-    top: 25%;
-    bottom: 20px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
     transform: scale(0);
     transition: 0.5s;
   }
@@ -414,30 +414,33 @@ body {
   }
 
   .news-wrapper .news-background .content h1 {
-    position: relative;
+    position: absolute;
     color: #fff;
-    max-width: 80%;
+    max-width: 85%;
     left: 15px;
+    top: 15%;
     text-align: left;
     font-size: 6vw;
     line-height: 28px;
   }
 
   .news-wrapper .news-background .content p {
-    position: relative;
-    max-width: 80%;
+    position: absolute;
+    max-width: 85%;
     left: 15px;
-    top: 10px;
+    top: 37%;
     font-size: 4vw;
-    line-height:16px;
+    line-height:5vw;
+    max-height: 10vw;
+    overflow-y: hidden;
     color: #A7A7A7;
   }
 
   .news-wrapper .news-background .content .btn {
-    position: relative;
+    position: absolute;
     height: 6vw;
     left: 15px;
-    top: 20px;
+    top: 70%;
     background: #17597F;
     border-radius: 3vw 0 3vw 0;
     font-size: 3.5vw;
@@ -938,11 +941,11 @@ body {
   }
 
   .news-wrapper .news-background .content {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 150px;
-    top: 25%;
-    bottom: 20px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
     transform: scale(0);
     transition: 0.5s;
   }
@@ -952,30 +955,31 @@ body {
   }
 
   .news-wrapper .news-background .content h1 {
-    position: relative;
+    position: absolute;
     color: #fff;
-    max-width: 60%;
+    max-width: 85%;
     left: 15px;
+    top: 25%;
     text-align: left;
     font-size: 4.3vw;
     line-height: 28px;
   }
 
   .news-wrapper .news-background .content p {
-    position: relative;
-    max-width: 60%;
+    position: absolute;
+    max-width: 85%;
     left: 15px;
-    top: 10px;
+    top: 45%;
     font-size: 3vw;
-    line-height: 16px;
+    line-height: 20px;
     color: #A7A7A7;
   }
 
   .news-wrapper .news-background .content .btn {
-    position: relative;
+    position: absolute;
     height: 6vw;
     left: 15px;
-    top: 20px;
+    top: 70%;
     background: #17597F;
     border-radius: 3vw 0 3vw 0;
     font-size: 3vw;
