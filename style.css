@@ -1709,6 +1709,7 @@ body {
     align-items: center;
     max-width: 25vw;
     gap: 1.5vw;
+    overflow-y: auto;
   }
 
 
