@@ -652,6 +652,7 @@ body {
     width:  45%;
     height: 70vw;
     gap: 2vw;
+    overflow: auto;
   }
 
   .team .team-wrapper .team-box .circle {
@@ -1709,7 +1710,6 @@ body {
     align-items: center;
     max-width: 25vw;
     gap: 1.5vw;
-    overflow: auto;
   }
 
 
