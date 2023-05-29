@@ -671,44 +671,43 @@ body {
   }
 
   .team .team-wrapper {
-    padding: 50px 25px;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 45px;
-  }
-
-  .team .team-wrapper .team-box {
-    position: relative;
-    background: #F7F7F7;
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 3vw 0 3vw 0;
-    padding: 0 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:  45%;
-    height: 70vw;
-    gap: 2vw;
-    overflow: auto;
+    padding: 3.5vw;
+    gap: 9vw;
+  }
+
+  .team .team-wrapper .team-box {
+    background: #F7F7F7;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 1px;
+    border-radius: 2vw 0 2vw 0;
+    padding: 3vw 1vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 1.5vw;
+    transition: 0.3s;
+  }
+
+  .team .team-wrapper .team-box:hover{
+    transform: scale(1.1);
   }
 
   .team .team-wrapper .team-box .circle {
     position: relative;
-    width: 20vw;
-    height: 20vw;
-    top: 10px;
+    width: 45vw;
+    height: 45vw;
     background: #3787C4;
     border-radius: 50%;
   }
-
   .team .team-wrapper .team-box .name {
-    position: relative;
-    width: 90%;
-    top: 20px;
-    font-size: 4vw;
+    font-weight: 600;
+    font-size: 6vw;
     line-height: 28px;
     text-align: center;
     color: #232323;
@@ -716,12 +715,23 @@ body {
 
   .team .team-wrapper .team-box .description {
     position: relative;
-    width: 90%;
-    top: 30px;
-    font-size: 3vw;
-    line-height: 18px;
     text-align: center;
+    font-size: 4.5vw;
+    width: 100%;
     color: #000000;
+  }
+  .team .team-wrapper .team-box .links {
+    margin-top: auto;
+    display: flex;
+    gap: 4vw;
+  }
+  .team .team-wrapper .team-box .links a {
+    font-size: 10vw;
+    color: #232323;
+    transition: 0.3s;
+  }
+  .team .team-wrapper .team-box .links a:hover{
+    transform: scale(1.2);
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1250,42 +1260,43 @@ body {
   }
 
   .team .team-wrapper {
-    padding: 50px 25px;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 45px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto auto;
+    padding: 3.5vw;
+    gap: 9vw;
   }
 
   .team .team-wrapper .team-box {
-    position: relative;
     background: #F7F7F7;
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 3vw 0 3vw 0;
-    padding: 0 1vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 1px;
+    border-radius: 2vw 0 2vw 0;
+    padding: 3vw 1vw;
+    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width:  40%;
-    height: 60vw;
-    gap: 2vw;
+    max-width: 35vw;
+    gap: 1.5vw;
+    transition: 0.3s;
+  }
+
+  .team .team-wrapper .team-box:hover{
+    transform: scale(1.1);
   }
 
   .team .team-wrapper .team-box .circle {
     position: relative;
-    width: 20vw;
-    height: 20vw;
-    top: 20px;
+    width: 28vw;
+    height: 28vw;
     background: #3787C4;
     border-radius: 50%;
   }
 
   .team .team-wrapper .team-box .name {
-    position: relative;
-    width: 90%;
-    top: 30px;
+    font-weight: 600;
     font-size: 3.5vw;
     line-height: 28px;
     text-align: center;
@@ -1294,12 +1305,23 @@ body {
 
   .team .team-wrapper .team-box .description {
     position: relative;
-    width: 90%;
-    top: 40px;
-    font-size: 2.5vw;
-    line-height: 18px;
     text-align: center;
+    font-size: 2.4vw;
+    width: 100%;
     color: #000000;
+  }
+  .team .team-wrapper .team-box .links {
+    margin-top: auto;
+    display: flex;
+    gap: 4vw;
+  }
+  .team .team-wrapper .team-box .links a {
+    font-size: 5vw;
+    color: #232323;
+    transition: 0.3s;
+  }
+  .team .team-wrapper .team-box .links a:hover{
+    transform: scale(1.2);
   }
 }
 @media screen and (min-width: 769px) {
@@ -1667,6 +1689,7 @@ body {
     z-index: -1;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
   .projects .blobs .blob_4{
     position: absolute;
@@ -1800,24 +1823,23 @@ body {
   }
 
   .team .team-wrapper {
-    padding: 50px 25px;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+    padding: 5vw;
     gap: 4.5vw;
   }
   
   .team .team-wrapper .team-box {
-    position: relative;
-    height: 70vh;
     background: #F7F7F7;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 1px;
-    border-radius: 1.5vw 0 1.5vw 0;
-    padding: 0 1vw;
+    border-radius: 2vw 0 2vw 0;
+    padding: 3vw 1vw;
+    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     max-width: 25vw;
     gap: 1.5vw;
@@ -1830,18 +1852,15 @@ body {
 
   .team .team-wrapper .team-box .circle {
     position: relative;
-    width: 13vw;
-    height: 13vw;
-    top: 44px;
+    width: 15vw;
+    height: 15vw;
     background: #3787C4;
     border-radius: 50%;
   }
 
   .team .team-wrapper .team-box .name {
-    position: relative;
-    max-width: 20vw;
-    top: 60px;
-    font-size: 1.5vw;
+    font-weight: 600;
+    font-size: 1.7vw;
     line-height: 28px;
     text-align: center;
     color: #232323;
@@ -1849,11 +1868,23 @@ body {
 
   .team .team-wrapper .team-box .description {
     position: relative;
-    max-width: 20vw;
-    top: 85px;
-    font-size: 1.1vw;
-    line-height: 18px;
     text-align: center;
+    font-size: 1.4vw;
+    width: 100%;
+    /* min-height: 20vh; */
     color: #000000;
+  }
+  .team .team-wrapper .team-box .links {
+    margin-top: auto;
+    display: flex;
+    gap: 4vw;
+  }
+  .team .team-wrapper .team-box .links a {
+    font-size: 3vw;
+    color: #232323;
+    transition: 0.3s;
+  }
+  .team .team-wrapper .team-box .links a:hover{
+    transform: scale(1.2);
   }
 }/*# sourceMappingURL=style.css.map */
