@@ -1670,8 +1670,7 @@ body {
   }
   .projects .blobs .blob_4{
     position: absolute;
-    transform: scale(60%);
-    transform: translate(-40%, 32%) scale(60%);
+    transform: translate(-60%, 32%) scale(60%);
   }
   .projects .blobs .blob_5{
     position: absolute;
