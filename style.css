@@ -1264,8 +1264,9 @@ body {
     display: grid;
     justify-items: center;
     grid-template-columns: auto auto;
-    padding: 3.5vw;
-    gap: 9vw;
+    padding: 4vw;
+    gap: 4vw;
+    row-gap: 4.5vw;
   }
 
   .team .team-wrapper .team-box {
@@ -1278,7 +1279,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 35vw;
+    max-width: 40vw;
     gap: 1.5vw;
     transition: 0.3s;
   }
@@ -1829,6 +1830,7 @@ body {
     grid-template-columns: auto auto auto;
     padding: 5vw;
     gap: 4.5vw;
+    
   }
   
   .team .team-wrapper .team-box {
