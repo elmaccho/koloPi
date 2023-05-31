@@ -705,6 +705,10 @@ body {
     height: 45vw;
     background: #3787C4;
     border-radius: 50%;
+    overflow: hidden;
+  }
+  .team .team-wrapper .team-box .circle img{
+    width: 100%;
   }
   .team .team-wrapper .team-box .name {
     font-weight: 600;
@@ -1296,8 +1300,11 @@ body {
     height: 28vw;
     background: #3787C4;
     border-radius: 50%;
+    overflow: hidden;
   }
-
+  .team .team-wrapper .team-box .circle img{
+    width: 100%;
+  }
   .team .team-wrapper .team-box .name {
     font-weight: 600;
     font-size: 3.5vw;
