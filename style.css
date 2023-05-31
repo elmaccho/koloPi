@@ -1858,8 +1858,11 @@ body {
     position: relative;
     width: 15vw;
     height: 15vw;
-    background: #3787C4;
     border-radius: 50%;
+    overflow: hidden;
+  }
+  .team .team-wrapper .team-box .circle img{
+    width: 100%;
   }
 
   .team .team-wrapper .team-box .name {
