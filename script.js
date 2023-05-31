@@ -4,7 +4,8 @@ const nav = document.querySelector('nav')
 
 const navLinks = document.querySelectorAll('.nav_links a')
 
-console.log(navLinks);
+const teamWrapper = document.querySelector('.team-wrapper')
+const teamBoxes = document.querySelectorAll('.team-box');
 
 
 const closeNavMen = () => {
