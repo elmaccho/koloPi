@@ -7,6 +7,36 @@ const navLinks = document.querySelectorAll('.nav_links a')
 const teamWrapper = document.querySelector('.team-wrapper')
 const teamBoxes = document.querySelectorAll('.team-box');
 
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const slides = document.getElementsByClassName('team-slide');
+let currentSlide = 0;
+
+// Funkcja do przewijania do poprzedniego slajdu
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showBoxes();
+}
+
+// Funkcja do przewijania do następnego slajdu
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showBoxes();
+}
+
+// Funkcja do pokazywania odpowiednich boxów w zależności od slajdu
+function showBoxes() {
+  const slideWidth = slides[0].offsetWidth;
+  const slideOffset = -currentSlide * slideWidth;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.transform = `translateX(${slideOffset}px)`;
+  }
+}
+
+// Obsługa kliknięcia przycisków
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
 
 const closeNavMen = () => {
     nav.classList.toggle('nav-toggle')
