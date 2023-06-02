@@ -1864,6 +1864,7 @@ body {
     max-width: 25vw;
     gap: 1.5vw;
     transition: 0.3s;
+    position: relative;
   }
 
   .team .team-wrapper .team-box:hover{
@@ -1897,7 +1898,7 @@ body {
   }
 
   .team .team-wrapper .team-box .description {
-    position: relative;
+    /* position: relative; */
     text-align: center;
     font-size: 1.4vw;
     width: 100%;
