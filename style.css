@@ -1918,3 +1918,9 @@ body {
     transform: scale(1.2);
   }
 }/*# sourceMappingURL=style.css.map */
+
+.link{
+  color:#3787C4;
+  font-weight: 600;
+  text-decoration: none;
+}
