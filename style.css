@@ -205,6 +205,7 @@ body {
   border-radius: 2vw 0 2vw 0;
   /* padding: 1vw 1vw; */
   
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -765,7 +766,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20vw;
+    gap: 35vw;
     padding: 15vw 0;
   }
   .team .team-wrapper .team-box .circle {
@@ -774,6 +775,10 @@ body {
   }
   .team .team-wrapper .team-box .name {
     font-size: 7vw;
+  }
+  .team .team-wrapper .team-box .circle .inner-circle{
+    width: 55vw;
+    height: 55vw;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1256,6 +1261,7 @@ body {
   }
   .team .team-wrapper {
     grid-template-columns: auto auto;
+    row-gap: 20vw;
   }
   .team .team-wrapper .team-box .circle {
     width: 28vw;
@@ -1263,6 +1269,10 @@ body {
   }
   .team .team-wrapper .team-box .name {
     font-size: 3.5vw;
+  }
+  .team .team-wrapper .team-box .circle .inner-circle{
+    width: 28vw;
+    height: 28vw;
   }
 }
 @media screen and (min-width: 769px) {
