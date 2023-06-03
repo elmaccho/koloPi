@@ -15,13 +15,13 @@ let currentSlide = 0;
 
 // Funkcja do przewijania do poprzedniego slajdu
 function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  currentSlide = (currentSlide - 1.15 + slides.length) % slides.length;
   showBoxes();
 }
 
 // Funkcja do przewijania do następnego slajdu
 function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
+  currentSlide = (currentSlide + 1.15) % slides.length;
   console.log(currentSlide);
   showBoxes();
 }
