@@ -154,7 +154,9 @@ body {
   overflow: hidden;
   transition: 0.3s linear;
   display: flex;
-  gap: 3vw;
+  gap: 12vw;
+  padding: 0 9vw;
+  box-sizing: border-box;
   background-color: red;
 }
 .team .team-slider .team-slide {
@@ -164,7 +166,10 @@ body {
   gap: 3vw;
   transition: 0.3s ease-in-out;
   flex-wrap: nowrap;
-  background-color: gold;
+  /* background-color: gold; */
+}
+.team .team-slider .team-slide:first-child{
+  /* margin-left: 9vw; */
 }
 .team .team-slider .team-slide .team-box{
   display: flex;
