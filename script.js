@@ -4,10 +4,12 @@ const nav = document.querySelector('nav')
 
 const navLinks = document.querySelectorAll('.nav_links a')
 
+const teamWrapper = document.querySelector('.team-wrapper')
+
 
 const team = [
   {
-    imie: "Opiekun Koła",
+    imie: "Opiekun Koła <br>",
     nazwisko: "Porucznik",
     ranga: "Opiekun koła",
     opis: `Sympatyczny człowiek, ale tylko i wyłącznie dla miłych ludzi. 
@@ -16,7 +18,7 @@ const team = [
     udowadniając ze każdy z nas może być lepsza osoba jeśli zmieni… siebie dissując 
     tych, którzy nie chcą się odmienić swego życia, bo nie znając didaskaliów Porucznika
      nikt nie wie ze… #szkodaczasu.`,
-     zdjecie: "img/team/opiekun kola.jpg"
+     zdjecie: "./img/team/opiekun kola.jpg"
   },
   {
     imie: "Wiktor",
@@ -150,10 +152,29 @@ const team = [
     interesuje się grami komputerowymi, piłką nożną oraz fotografią.`,
      zdjecie: "img/team/Damian Chmielewski.jpg"
   },
-  
-  
+  {
+    imie: "Piotr",
+    nazwisko: "Szaruga",
+    ranga: "Członek koła",
+    opis: `Brak opisu.`,
+     zdjecie: "img/team/"
+  }
 ]
 
+team.forEach( (person) => {
+  const box = document.createElement('div')
+  box.classList.add('team-box')
+  box.innerHTML = `
+    <div class=\"team-box\">
+    <div class=\"circle\">
+        <div class="inner-circle">
+            <img src='${person.zdjecie}' alt="">
+        </div>
+    </div>
+    <div class="name">${person.imie} ${person.nazwisko}</div>
+  </div>`
+  teamWrapper.appendChild(box)
+})
 
 const closeNavMen = () => {
     nav.classList.toggle('nav-toggle')
