@@ -4,40 +4,155 @@ const nav = document.querySelector('nav')
 
 const navLinks = document.querySelectorAll('.nav_links a')
 
-const teamWrapper = document.querySelector('.team-wrapper')
-const teamBoxes = document.querySelectorAll('.team-box');
 
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const slides = document.getElementsByClassName('team-slide');
-let currentSlide = 0;
-
-
-// Funkcja do przewijania do poprzedniego slajdu
-function prevSlide() {
-  currentSlide = (currentSlide - 1.15 + slides.length) % slides.length;
-  showBoxes();
-}
-
-// Funkcja do przewijania do następnego slajdu
-function nextSlide() {
-  currentSlide = (currentSlide + 1.15) % slides.length;
-  console.log(currentSlide);
-  showBoxes();
-}
-
-// Funkcja do pokazywania odpowiednich boxów w zależności od slajdu
-function showBoxes() {
-  const slideWidth = slides[0].offsetWidth;
-  const slideOffset = -currentSlide * slideWidth;
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(${slideOffset}px)`;
-  }
-}
-
-// Obsługa kliknięcia przycisków
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
+const team = [
+  {
+    imie: "Opiekun Koła",
+    nazwisko: "Porucznik",
+    ranga: "Opiekun koła",
+    opis: `Sympatyczny człowiek, ale tylko i wyłącznie dla miłych ludzi. 
+    Gdy nazwano go Anakinem on już wiedział, że będą żałować, bo będzie Vaderem. 
+    Mówi ze nie zna się na niczym, bo tak jest łatwiej o „coaching i mentoring” 
+    udowadniając ze każdy z nas może być lepsza osoba jeśli zmieni… siebie dissując 
+    tych, którzy nie chcą się odmienić swego życia, bo nie znając didaskaliów Porucznika
+     nikt nie wie ze… #szkodaczasu.`,
+     zdjecie: "img/team/opiekun kola.jpg"
+  },
+  {
+    imie: "Wiktor",
+    nazwisko: "Wikaliński",
+    ranga: "Przewodniczący",
+    opis: `Prezes koła. Jako przewodniczący Koła Naukowego, moim celem 
+    jest wprowadzenie dynamicznych zmian na naszej uczelni poprzez organizację 
+    interesujących projektów oraz wydarzeń. Chcę, aby nasze działania przyczyniły 
+    się przede wszystkim do ożywienia atmosfery akademickiej i zapewnienia studentom 
+    unikalnych możliwości rozwoju i integracji. Dążymy do tworzenia inspirującego 
+    środowiska, które pobudza kreatywność i umożliwia nawiązywanie cennych kontaktów
+     wśród studentów z różnych dziedzin.`,
+     zdjecie: "img/team/Wiktor Wikalinski.jpg"
+  },
+  {
+    imie: "Zuzanna",
+    nazwisko: "Wypchło",
+    ranga: "Zastępca przewodniczącego",
+    opis: `Rezolutna perfekcjonistka, której nie umknie nawet najmniejszy szczegół. 
+    Zacięta, nieustępliwa i zdeterminowana w dążeniu do celu - zodiakalny baran w 
+    końcu do czegoś zobowiązuje.`,
+     zdjecie: "img/team/Zuzanna Wypchlo.jpg"
+  },
+  {
+    imie: "Patryk",
+    nazwisko: "Staniszewski",
+    ranga: "Członek zarządu",
+    opis: `Decydując się na dołączenie do zarządu koła PI z całego serca pragnę
+     wspomagać całą rodzinę PI do tworzenia ekscytujących projektów
+    które będą nieść nas jako ambitnych studentów z nieskończonym głodem poszerzania
+     horyzontów. Sam, nazywając się nowoczesnym dziadersem kieruje się dyscypliną i 
+     starą szkołą ciężkiej pracy na rzecz tego co kocham i w czym się spełniam.`,
+     zdjecie: "img/team/Patryk Staniszewski.jpg"
+  },
+  {
+    imie: "Maciej",
+    nazwisko: "Chojnacki",
+    ranga: "Członek zarządu",
+    opis: `Nazywam się Maciej i podjąłem decyzję o dołączeniu do koła w celu
+     poszerzenia mojej wiedzy w dziedzinie IT. Oprócz tego, moje zainteresowania
+     obejmują siłownię, terrarystykę oraz Web Development.`,
+     zdjecie: "img/team/Maciej Chojnacki.jpg"
+  },
+  {
+    imie: "Sebastian",
+    nazwisko: "Sitek",
+    ranga: "Członek zarządu",
+    opis: `z wykształcenia technik informatyk. Oprócz szeroko pojętej dziedziny IT,
+     pasjonuje się również motoryzacją, siłownią i finansami. Od najmłodszych lat 
+     jestem wielkim entuzjastą gier komputerowych oraz tematyki związanej z e-sportem.
+     Wstąpiłem do koła, aby móc współpracować z innymi ambitnymi jednostkami.`,
+     zdjecie: "img/team/Sebastian Sitek.png"
+  },
+  {
+    imie: "Kacper",
+    nazwisko: "Zieliński",
+    ranga: "Członek zarządu",
+    opis: `Członek Koła Naukowego oraz student pierwszego roku na kierunku Informatyka.
+     Poza szeroko pojętą branżą IT jestem wielkim entuzjastą sportów motorowych oraz 
+     piłki nożnej. Wstąpiłem do koła ponieważ chcę być częścią silnej i ambitnej 
+     społeczności osób o podobnych zainteresowaniach. Wierzę, że nauki informatyczne 
+     mają potencjał do transformacji naszego społeczeństwa i jestem zdecydowany 
+     przyczynić się do tej zmiany.`,
+     zdjecie: "img/team/Kacper Zielinski.jpg"
+  },
+  {
+    imie: "Dawid",
+    nazwisko: "Karsznia",
+    ranga: "Członek koła",
+    opis: `Mam na imię Dawid. Od dawna moim celem było zostać programistą 
+    (w planach jest Full stack). Z tego powodu dołączyłem do koła, bo jak wiadomo,
+     największe wyzwania najlepiej pokonuje się w dobrym towarzystwie. Oprócz samego
+     programowania interesuję się historią, psychologią oraz uczę się grać na pianinie.`,
+     zdjecie: "img/team/Dawid Karsznia.png"
+  },
+  {
+    imie: "Krystian",
+    nazwisko: "Głogowski",
+    ranga: "Członek koła",
+    opis: `Cześć, jestem Krystian. Od najmłodszych lat interesuje mnie informatyka 
+    i wszelkie tematy z nią związane. Aby jeszcze bardziej poszerzyć swoją wiedzą w 
+    tym temacie postanowiłem dołączyć do Koła PI! Ponadto lubię fotografować oraz 
+    interesuje się światem social mediów.`,
+     zdjecie: "img/team/Krystian Glogowski.jpg"
+  },
+  {
+    imie: "Rafał",
+    nazwisko: "Kozłowski",
+    ranga: "Członek koła",
+    opis: `Cześć, jestem Rafał posiadam doświadczenie w programowaniu oraz 
+    rozwiązywaniu problemów technicznych. Jestem aktywnym członkiem grupy 
+    informatycznej gotowym do pomocy w różnych trudności. Bardzo lubię podróżować 
+    oraz spędzać aktywnie wolny czas.`,
+     zdjecie: "img/team/Rafal Kozlowski.jpeg"
+  },
+  {
+    imie: "Dominik",
+    nazwisko: "Kuropatwiński",
+    ranga: "Członek koła",
+    opis: `Cześć, Jestem Dominik i jestem entuzjasta nowych technologii, 
+    filmów fantastycznych i gier wideo. Dołączyłem do tego koła, ponieważ chcę
+     stale się rozwijać i być na bieżąco w dziedzinie IT. Moja pasja motywuje mnie
+      do ciągłego poszerzania swojej wiedzy aby w przyszłości móc przekazać ją 
+      młodszym pokoleniom.`,
+     zdjecie: "img/team/Dominik Kuropatwinski.jpg"
+  },
+  {
+    imie: "Slavik",
+    nazwisko: "Hryn",
+    ranga: "Członek koła",
+    opis: `Nazywam się Slavik. Uwielbiam programować, podróżować i zawsze
+     jestem otwarty na nowe doświadczenia :)`,
+     zdjecie: "img/team/Slavik Hryn.png"
+  },
+  {
+    imie: "Kacper",
+    nazwisko: "Stępień",
+    ranga: "Członek koła",
+    opis: `Jestem Kacper i jestem spokojnym 21-latkiem, który niedawno odkrył pasję 
+    do programowania. Gdy mam czas wolny, lubię aktywnie spędzać go na pływaniu lub
+     jeździe rowerem. Natomiast wieczorami preferuję relaks przy oglądaniu seriali lub
+     grze w towarzystwie znajomych.`,
+     zdjecie: "img/team/Kacper Stepien.jpg"
+  },
+  {
+    imie: "Damian",
+    nazwisko: "Chmielewski",
+    ranga: "Członek koła",
+    opis: `Witam, jestem Damian. Interesuje się informatyką, dlatego zdecydowałem
+    się dołączyć do koła. Moim celem jest poszerzenie mojej wiedzy. Poza informatyką
+    interesuje się grami komputerowymi, piłką nożną oraz fotografią.`,
+     zdjecie: "img/team/Damian Chmielewski.jpg"
+  },
+  
+  
+]
 
 
 const closeNavMen = () => {
