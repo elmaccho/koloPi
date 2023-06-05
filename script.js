@@ -239,7 +239,7 @@ const openInfoBox = (e) => {
     const imageSrc = image.getAttribute('src');
 
     console.log('Zdjęcie:', imageSrc);
-    console.log('Imię i nazwisko:', fullName);
+    console.log('Imię i nazwisko:', name);
   }
   
 }
