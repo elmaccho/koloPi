@@ -5,6 +5,11 @@ const nav = document.querySelector('nav')
 const navLinks = document.querySelectorAll('.nav_links a')
 
 const teamWrapper = document.querySelector('.team-wrapper')
+const teamBoxes = document.querySelectorAll('.team-box')
+const viewInfo = document.querySelector('.view-info')
+const infoBoxOpen = document.querySelector('.infoBox-open')
+const infoWrapper = document.querySelector('.info-wrapper')
+const body = document.querySelector('body')
 
 
 const team = [
@@ -161,20 +166,18 @@ const team = [
   }
 ]
 
-team.forEach( (person) => {
-  const box = document.createElement('div')
-  box.classList.add('team-box')
-  box.innerHTML = `
-    <div class=\"team-box\">
-    <div class=\"circle\">
-        <div class="inner-circle">
-            <img src='${person.zdjecie}' alt="">
-        </div>
-    </div>
-    <div class="name">${person.imie} ${person.nazwisko}</div>
-  </div>`
-  teamWrapper.appendChild(box)
-})
+// team.forEach( (person) => {
+//   const box = document.createElement('div')
+//   box.classList.add('team-box')
+//   box.innerHTML = `
+//     <div class=\"circle\">
+//         <div class="inner-circle">
+//             <img src='${person.zdjecie}' alt="">
+//         </div>
+//     </div>
+//     <div class="name">${person.imie} ${person.nazwisko}</div>`
+//   teamWrapper.appendChild(box)
+// })
 
 const closeNavMen = () => {
     nav.classList.toggle('nav-toggle')
@@ -221,13 +224,45 @@ const navHighlight = () => {
   
     window.addEventListener("scroll", highlightNavLink);
 }
+const openInfoBox = (e) => {
+  viewInfo.classList.add('infoBox-open')
+  teamWrapper.style.filter = 'blur(2px)'
+  nav.style.filter = 'blur(2px)'
+  body.style.overflowY = 'hidden'
+
+  const clickedBox = e.target.closest('.team-box');
+
+  if (clickedBox) {
+    const image = clickedBox.querySelector('img');
+    const name = clickedBox.querySelector('.name');
+
+    const imageSrc = image.getAttribute('src');
+
+    console.log('Zdjęcie:', imageSrc);
+    console.log('Imię i nazwisko:', fullName);
+  }
+  
+}
+const closeInfoBox = (e) => {
+  if(viewInfo.contains(e.target) && !infoWrapper.contains(e.target)){
+    viewInfo.classList.remove('infoBox-open')
+    teamWrapper.style.filter = 'blur(0px)'
+    nav.style.filter = 'blur(0px)'
+    body.style.overflowY = 'scroll'
+  }
+}
 
 for(let navLink of navLinks){
     navLink.addEventListener('click', closeNavMen)
+}
+for(let teamBox of teamBoxes){
+  teamBox.addEventListener('click', openInfoBox)
 }
 closeNavBtn.addEventListener('click', closeNavMen)
 openNavBtn.addEventListener('click', openNavMen)
 document.addEventListener('click', outsideNav)
 window.addEventListener('scroll', navScroll)
 document.addEventListener("DOMContentLoaded", navHighlight);
-  
+document.addEventListener('click', closeInfoBox)
+
+teamWrapper.addEventListener('click', openInfoBox)
