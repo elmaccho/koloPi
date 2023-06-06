@@ -5,12 +5,23 @@ const nav = document.querySelector('nav')
 const navLinks = document.querySelectorAll('.nav_links a')
 
 const teamWrapper = document.querySelector('.team-wrapper')
-const teamBoxes = document.querySelectorAll('.team-box')
+const teamBoxes = document.querySelectorAll('.team .team-wrapper .team-row .team-box');
+
 const viewInfo = document.querySelector('.view-info')
 const infoBoxOpen = document.querySelector('.infoBox-open')
 const infoWrapper = document.querySelector('.info-wrapper')
+
+const descImg = document.querySelector('.desc-img')
+const descName = document.querySelector('.desc-name')
+const descRank = document.querySelector('.desc-rank')
+const descDescription = document.querySelector('.desc-description')
+
 const body = document.querySelector('body')
 
+const teamRows = document.querySelectorAll(".team-row");
+const seeMoreBtn = document.querySelector('.seeMoreBtn')
+
+let currentIndex = 1;
 
 const team = [
   {
@@ -225,39 +236,47 @@ const navHighlight = () => {
   
     window.addEventListener("scroll", highlightNavLink);
 }
-const openInfoBox = (e) => {
-  viewInfo.classList.add('infoBox-open')
-  teamWrapper.style.filter = 'blur(2px)'
-  nav.style.filter = 'blur(2px)'
-  body.style.overflowY = 'hidden'
-
-  const clickedBox = e.target.closest('.team-box');
-
-  if (clickedBox) {
-    const image = clickedBox.querySelector('img');
-    const name = clickedBox.querySelector('.name');
-
-    const imageSrc = image.getAttribute('src');
-
-    console.log('Zdjęcie:', imageSrc);
-    console.log('Imię i nazwisko:', name);
-  }
-  
-}
 const closeInfoBox = (e) => {
   if(viewInfo.contains(e.target) && !infoWrapper.contains(e.target)){
     viewInfo.classList.remove('infoBox-open')
     teamWrapper.style.filter = 'blur(0px)'
     nav.style.filter = 'blur(0px)'
+    seeMoreBtn.style.filter = 'blur(0px)'
     body.style.overflowY = 'scroll'
+  }
+}
+const openInfoBox = (e) => {
+  const imgClosest = e.target.closest('.team-box').querySelector('img').getAttribute('src')
+  const nameClosest = e.target.closest('.team-box').querySelector('.name').textContent
+  viewInfo.classList.add('infoBox-open')
+
+  descImg.setAttribute('src', imgClosest)
+  descName.textContent = nameClosest
+
+
+  teamWrapper.style.filter = 'blur(2px)'
+  nav.style.filter = 'blur(2px)'
+  seeMoreBtn.style.filter = 'blur(2px)'
+  body.style.overflowY = 'hidden'
+}
+const showNextTeamRow = () => {
+  if (currentIndex < teamRows.length) {
+    teamRows[currentIndex].style.display = "flex";
+    currentIndex++;
+
+    if (currentIndex === teamRows.length) {
+      document.querySelector(".seeMoreBtn").style.display = "none";
+    }
   }
 }
 
 for(let navLink of navLinks){
     navLink.addEventListener('click', closeNavMen)
 }
-for(let teamBox of teamBoxes){
-  teamBox.addEventListener('click', openInfoBox)
+for (let teamBox of teamBoxes) {
+  teamBox.addEventListener('click', (e)=>{
+    openInfoBox(e)
+  });
 }
 closeNavBtn.addEventListener('click', closeNavMen)
 openNavBtn.addEventListener('click', openNavMen)
@@ -265,5 +284,4 @@ document.addEventListener('click', outsideNav)
 window.addEventListener('scroll', navScroll)
 document.addEventListener("DOMContentLoaded", navHighlight);
 document.addEventListener('click', closeInfoBox)
-
-teamWrapper.addEventListener('click', openInfoBox)
+seeMoreBtn.addEventListener('click', showNextTeamRow)
