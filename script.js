@@ -15,6 +15,7 @@ const descImg = document.querySelector('.desc-img')
 const descName = document.querySelector('.desc-name')
 const descRank = document.querySelector('.desc-rank')
 const descDescription = document.querySelector('.desc-description')
+const closeInfoBtn = document.querySelector('.closeInfoBtn')
 
 const body = document.querySelector('body')
 
@@ -244,14 +245,25 @@ const closeInfoBox = (e) => {
     seeMoreBtn.style.filter = 'blur(0px)'
     body.style.overflowY = 'scroll'
   }
+  else if (closeInfoBtn.contains(e.target)){
+    viewInfo.classList.remove('infoBox-open')
+    teamWrapper.style.filter = 'blur(0px)'
+    nav.style.filter = 'blur(0px)'
+    seeMoreBtn.style.filter = 'blur(0px)'
+    body.style.overflowY = 'scroll'
+  }
 }
 const openInfoBox = (e) => {
   const imgClosest = e.target.closest('.team-box').querySelector('img').getAttribute('src')
   const nameClosest = e.target.closest('.team-box').querySelector('.name').textContent
+  const descriptionClosest = e.target.closest('.team-box').querySelector('.description').textContent
+  const rankClosest = e.target.closest('.team-box').querySelector('.rank').textContent
   viewInfo.classList.add('infoBox-open')
 
   descImg.setAttribute('src', imgClosest)
   descName.textContent = nameClosest
+  descDescription.textContent = descriptionClosest
+  descRank.textContent = rankClosest
 
 
   teamWrapper.style.filter = 'blur(2px)'
@@ -285,3 +297,4 @@ window.addEventListener('scroll', navScroll)
 document.addEventListener("DOMContentLoaded", navHighlight);
 document.addEventListener('click', closeInfoBox)
 seeMoreBtn.addEventListener('click', showNextTeamRow)
+closeInfoBtn.addEventListener('click', closeInfoBox)

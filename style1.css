@@ -631,6 +631,9 @@ nav .nav_links a.active:after {
     gap: 1.5vw;
     transition: 0.3s;
 }
+.description, .rank{
+    display: none;
+}
   
 .team .team-wrapper .team-row .team-box:hover{
     transform: scale(1.1);
@@ -747,6 +750,20 @@ nav .nav_links a.active:after {
     width: 60%;
     padding-left: 3vw;
     box-sizing: border-box;
+}
+.view-info .info-wrapper .closeInfoBtn{
+    position: absolute;
+    top:1vw;
+    right: 1vw;
+
+    font-size: 3vw;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.view-info .info-wrapper .closeInfoBtn:hover{
+    opacity: 75%;
 }
 .info-description .desc-name{
     font-weight: 600;
