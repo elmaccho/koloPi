@@ -161,8 +161,9 @@ const team = [
     imie: "Piotr",
     nazwisko: "Szaruga",
     ranga: "Członek koła",
-    opis: `Brak opisu.`,
-     zdjecie: "img/team/"
+    opis: `Człowiek interesujący się fotografią. Potrafi modulować swoim głosem.
+     Dołączając do koła chciałem pomóc innym z podobnymi zainteresowaniami.`,
+     zdjecie: "img/team/Piotr Szaruga.jpg"
   }
 ]
 

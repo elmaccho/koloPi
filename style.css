@@ -47,31 +47,13 @@ body {
 .header-logo .lines {
   position: absolute;
 }
-.header-logo .line-1 {
-  animation: 30s linear forwards rotateFow infinite;
-}
-.header-logo .line-2 {
-  animation: 30s linear forwards rotateFow infinite;
-}
-.header-logo .line-3 {
-  animation: 30s linear forwards rotateFow infinite;
-}
-.header-logo .line-4 {
-  animation: 30s linear forwards rotateFow infinite;
-}
-.header-logo .line-5 {
-  animation: 30s linear forwards rotateFow infinite;
-}
-.header-logo .line-6 {
-  animation: 30s linear forwards rotateFow infinite;
-}
-.header-logo .line-7 {
+.header-logo .linesRotate {
   animation: 30s linear forwards rotateFow infinite;
 }
 
 .classicBtn {
   position: relative;
-  color: #232323;
+  color: white;
   text-decoration: none;
   font-size: 5.5vw;
   transition: 0.3s;
@@ -1318,7 +1300,7 @@ body {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     padding: 5px 45px;
-    background-color: white;
+    background-color: #2323238c;
   }
   nav {
     display: flex;
@@ -1336,6 +1318,7 @@ body {
     display: none;
   }
   nav h1 {
+    color: white;
     font-size: 3.5vw;
   }
   nav .nav_links {
@@ -1356,7 +1339,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 70px;
+    padding: 75px 0;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .header .header-logo {
     width: 50vw;
@@ -1370,6 +1356,7 @@ body {
     width: 60%;
     padding-left: 5vw;
     position: relative;
+    color: white;
   }
   .header .header-text h1 {
     font-weight: 600;
@@ -1383,23 +1370,6 @@ body {
   .header .header-text p {
     font-size: 1.3vw;
     text-align: left;
-  }
-  .header .blobs{
-    position: absolute;
-    top:0;
-    left:0;
-
-    width: 100%;
-    min-height: 150vh;
-    overflow: hidden;
-  }
-  .header .blobs .blob_1{
-    position: absolute;
-    transform: translate(-50%, -55%) scale(50%);
-  }
-  .header .blobs .blob_2{
-    position: absolute;
-    transform: translate(50%, 10%) scale(45%);
   }
   .about-us {
     display: flex;
@@ -1449,12 +1419,10 @@ body {
     align-items: center;
     padding-bottom: 25px;
   }
-
   .news .title h1 {
     font-size: 5vw;
     color: #232323;
   }
-
   .news .title .line-left {
     height: 5px;
     width: 30%;
@@ -1602,6 +1570,7 @@ body {
     color: #17597F;
     box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 5px 0px;
   }
+  
   .projects {
     padding-top: 100px;
     position: relative;
