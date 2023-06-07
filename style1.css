@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: rgb(6,7,46);
-background: linear-gradient(180deg, rgba(6,7,46,1) 45%, rgba(14,47,86,1) 50%, rgba(23,89,127,1) 100%);
+background: linear-gradient(180deg, rgba(6,7,46,1) 45%, rgba(14,47,86,1) 80%, rgb(0, 5, 8) 100%);
 }
 
 .openNavBtn {
@@ -671,10 +671,8 @@ nav .nav_links a.active:after {
     font-weight: 600;
     font-size: 1.7vw;
     height: 2vw;
-    /* line-height: 28px; */
     text-align: center;
-    color: #232323;
-    /* background-color: red; */
+    color: white;
     pointer-events: none;
 }
 
