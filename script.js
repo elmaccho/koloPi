@@ -292,9 +292,19 @@ for (let teamBox of teamBoxes) {
 }
 closeNavBtn.addEventListener('click', closeNavMen)
 openNavBtn.addEventListener('click', openNavMen)
-document.addEventListener('click', outsideNav)
 window.addEventListener('scroll', navScroll)
-document.addEventListener("DOMContentLoaded", navHighlight);
-document.addEventListener('click', closeInfoBox)
 seeMoreBtn.addEventListener('click', showNextTeamRow)
 closeInfoBtn.addEventListener('click', closeInfoBox)
+
+document.addEventListener("DOMContentLoaded", navHighlight);
+document.addEventListener('click', closeInfoBox)
+document.addEventListener('click', outsideNav)
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    viewInfo.classList.remove('infoBox-open')
+    teamWrapper.style.filter = 'blur(0px)'
+    nav.style.filter = 'blur(0px)'
+    seeMoreBtn.style.filter = 'blur(0px)'
+    body.style.overflowY = 'scroll'
+  }
+});
