@@ -650,7 +650,7 @@ nav .nav_links a.active:after {
 .team .seeMoreBtn{
     padding: 1.3vw 5vw;
     margin: 2vw;
-    background-color: #06072E;
+    background-color: #0c0d45;
     border: none;
     position: relative;
     font-size: 1.5vw;
@@ -898,12 +898,40 @@ nav .nav_links a.active:after {
     
     .view-info .info-wrapper{
         flex-direction: column;
-        height: 130vw;
+        height: 85vw;
         width: 90%;
     }
     .view-info .info-wrapper .info-description{
         width: 100%;
         padding: 0;
+    }
+    .info-description .desc-name{
+        font-size: 3vw;
+    }
+    .info-description .desc-rank{
+        font-size: 2vw;
+    }
+    .info-description .desc-description{
+        font-size: 2.5vw;
+    }
+    .view-info .info-wrapper .info-img{
+        width: 40vw;
+        height: 40vw;
+    }
+    .view-info .info-wrapper .closeInfoBtn{
+        font-size: 8vw;
+    }
+    .info-description hr{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 481px){
+    .header .header-text p {
+        font-size: 4.5vw;
+    }
+
+    .view-info .info-wrapper{
+        height: 140vw;
     }
     .info-description .desc-name{
         font-size: 5vw;
@@ -912,16 +940,13 @@ nav .nav_links a.active:after {
         font-size: 4vw;
     }
     .info-description .desc-description{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .view-info .info-wrapper .info-img{
         width: 50vw;
         height: 50vw;
     }
     .view-info .info-wrapper .closeInfoBtn{
-        font-size: 10vw;
-    }
-    .info-description hr{
-        width: 50%;
+        font-size: 8vw;
     }
 }
