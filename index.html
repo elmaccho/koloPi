@@ -25,8 +25,7 @@
             <a class="classicBtn" href="#news">Aktualności</a>
             <a class="classicBtn" href="#projects">Projekty</a>
             <a class="classicBtn" href="#team">Zespół</a>
-
-            <a class="solidBtn" href="#">Kontakt</a>
+            <a class="classicBtn" href="#contact">Kontakt</a>
         </div>
     </nav>
 
@@ -365,7 +364,6 @@
                 </div>
             </div>
         </div>
-        
         <button class="seeMoreBtn">
             Wyświetl więcej
         </button>
@@ -385,6 +383,100 @@
             </div>
         </div>
     </section>
+
+    <section id="contact" class="contact_page">
+        <div class="contact_page__header">
+            <div class="line-left">
+                <span></span>
+            </div>
+            <h1 class="contact_page__title">Skontaktuj się z nami</h1>
+            <div class="line-right">
+                <span></span>
+            </div>
+        </div>
+        <div class="contact_page__content_background">
+            <div class="contact_page__wrapper">
+
+                <div class="contact_page__content">
+
+                    <div class="contact_page__info">
+                        <div class="contact_page__info__mail">
+                            <img src="./img/mail.png">
+                            <a href="mailto:kolopi@uthrad.pl">kolopi@uthrad.pl</a>
+                        </div>
+                        <div class="contact_page__info__number">
+                            <img src="./img/tele.svg">
+                            <a href="tel:500-113-995">500-113-995</a>
+                        </div>
+                    </div>
+            
+                    <div role="form" class="wpcf7 contact_page__form" id="wpcf7-f27-o1" lang="pl-PL" dir="ltr">
+                        <div class="screen-reader-response">
+                            <p role="status" aria-live="polite" aria-atomic="true"></p>
+                            <ul></ul>
+                        </div>
+                        <form action="./sending.php" method="post" class="wpcf7-form init" data-status="init">
+                            <div style="display: none;">
+                                <input type="hidden" name="_wpcf7" value="27">
+                                <input type="hidden" name="_wpcf7_version" value="5.4.1">
+                                <input type="hidden" name="_wpcf7_locale" value="pl_PL">
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f27-o1">
+                                <input type="hidden" name="_wpcf7_container_post" value="0">
+                                <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                            </div>
+                            
+                            <p>
+                                <label>
+                                    <span class="wpcf7-form-control-wrap your-subject">
+                                        <input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required mr_box_shadow"  placeholder="Imię i nazwisko" required="true" />
+                                    </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <span class="wpcf7-form-control-wrap your-email">
+                                        <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email mr_box_shadow"  placeholder="E-mail" required="true" />
+                                    </span>
+                                </label>
+                            </p>
+                            
+                            <p>
+                                <label>
+                                    <span class="wpcf7-form-control-wrap your-message">
+                                        <textarea name="your-message" for="your-message" cols="40" rows="10" class=" border" aria-invalid="false" placeholder="Wiadomość" required="true"></textarea>
+                                    
+                                    </span>
+                                </label>
+                            </p>
+                            <p>
+                            <label>
+                                <input id="btncheck" name="submit" type="submit" value="Wyślij" style="border: solid 1px transparent;" class="wpcf7-form-control wpcf7-submit"/>
+                            </label>
+                            </p>
+                            <!-- <div class="wpcf7-response-output" aria-hidden="true"></div> -->
+                        </form>
+                    </div>
+                </div>
+                
+                
+            
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./img/logo/logoHQ.png" alt="">
+
+        <div class="footer-content">
+
+            <a class="link" href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <span class="copyright">
+            &copy; 2023 Koło Naukowe PI
+        </span>
+    </footer>
 
     <script src="./script.js"></script>
 </body>

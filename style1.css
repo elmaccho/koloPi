@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: rgb(6,7,46);
-    background: linear-gradient(180deg, rgba(6,7,46,1) 45%, rgba(14,47,86,1) 80%, rgb(0, 5, 8) 100%);
+    background: linear-gradient(180deg, #06072e 45%, #0e2f56 80%, #000508 100%);
 }
 
 .openNavBtn {
@@ -177,7 +177,8 @@ nav .nav_links a.active:after {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 75px 0;
+    padding: 10vw 0;
+
     background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,7 +230,8 @@ nav .nav_links a.active:after {
 
 .about-us {
     display: flex;
-    padding: 15vw 0;
+    padding: 10vw 0;
+
     background-color: #06072E;
 }
 .about-us .img-wrapper {
@@ -262,6 +264,10 @@ nav .nav_links a.active:after {
     font-size: 1.5vw;
 }
 
+.news{
+    padding: 10vw 0;
+
+}
 .news .title {
     display: flex;
     justify-content: center;
@@ -396,7 +402,7 @@ nav .nav_links a.active:after {
 }
 
 .projects {
-    padding-top: 100px;
+    padding: 10vw 0;
     position: relative;
 }
 .projects .title {
@@ -445,7 +451,7 @@ nav .nav_links a.active:after {
     justify-items: center;
 }
 .projects .projects-wrapper .box-wrapper {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     background-color: #06072E;
     width: 23vw;
     padding: 2vw 2.4vw;
@@ -508,7 +514,7 @@ nav .nav_links a.active:after {
 }
 
 .team{
-    padding: 10vw 0 0 0;
+    padding: 10vw 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -740,6 +746,124 @@ nav .nav_links a.active:after {
     width: 85%;
 }
 
+
+
+.contact_page {
+    padding: 15vw 0;
+}
+
+.contact_page__title {
+    font-weight: 900;
+    font-size: 5vw;
+    line-height: 64px;
+    margin-bottom: 86px;
+    text-align: center;
+    color: white;
+}
+  
+.contact_page__wrapper {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+  
+.contact_page__content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.contact_page__content_background {
+    background-color: #3787c4;
+}
+  
+.contact_page__form {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px;
+    padding: 39px 34px;
+    margin: -37px 0;
+}
+  
+.contact_page__form form {
+    display: grid;
+    gap: 21px;
+}
+.contact_page__form p {
+    margin: 0;
+}
+  
+.contact_page__form input:not(input[type=submit]), 
+.contact_page__form textarea{
+    padding: 15px;
+    border: 0;
+    border-bottom: 2px solid #232323;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    
+    max-width: 134px;
+    width: 100%;
+    border: 2px solid #000000 !important;
+    border-radius: 10px 0px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 10px 0;
+    background: transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+  
+input[type=submit]:hover {
+    color: #FFF;
+    background-color: #232323;
+}
+  
+.contact_page__form textarea{
+    height: 132px;
+    resize: none;
+    font-weight: 900;
+}
+  
+.contact_page__form input:focus-visible, 
+.contact_page__form textarea:focus-visible{
+    outline: none;
+}
+  
+.contact_page__info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 50px;
+}
+  
+.contact_page__info a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+  
+.contact_page__info__mail,
+.contact_page__info__number {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+footer{
+    background-color: #232323;
+}
+footer img{
+    width: 30%;
+}
 @media screen and (max-width: 920px) {
     nav .nav_links{
         gap: 2vw;

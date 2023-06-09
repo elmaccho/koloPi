@@ -211,22 +211,19 @@ const navScroll = () => {
     }
 }
 const navHighlight = () => {
-    var navLinks = document.querySelectorAll(".nav_links a");
-    var sections = document.querySelectorAll("section");
+    let navLinks = document.querySelectorAll(".nav_links a");
+    let sections = document.querySelectorAll("section");
   
     function highlightNavLink() {
-      var scrollPosition = window.pageYOffset;
+      let scrollPosition = window.pageYOffset;
   
       sections.forEach(function(section) {
-        var sectionTop = section.offsetTop;
-        var sectionHeight = section.offsetHeight;
-        var sectionId = section.getAttribute("id");
-        var navLink = document.querySelector('a[href="#' + sectionId + '"]');
+        let sectionTop = section.offsetTop;
+        let sectionHeight = section.offsetHeight;
+        let sectionId = section.getAttribute("id");
+        let navLink = document.querySelector('a[href="#' + sectionId + '"]');
   
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition < sectionTop + sectionHeight
-        ) {
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
           navLinks.forEach(function(link) {
             link.classList.remove("active");
           });
