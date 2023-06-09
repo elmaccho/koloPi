@@ -64,6 +64,7 @@ body {
 .link{
     font-weight: 600;
     color:#3787C4;
+    text-decoration: none;
 }
 
 .title h1{
@@ -859,10 +860,19 @@ input[type=submit]:hover {
 }
 
 footer{
+    position: relative;
     background-color: #232323;
+    display: flex;
 }
 footer img{
     width: 30%;
+}
+footer .copyright{
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+    bottom:0;
 }
 @media screen and (max-width: 920px) {
     nav .nav_links{
