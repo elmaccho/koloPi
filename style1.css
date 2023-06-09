@@ -784,7 +784,11 @@ nav .nav_links a.active:after {
 }
 
 .contact_page__content_background {
-    background-color: #3787c4;
+    background-image: url(./img/technology-785742_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: left;
 }
   
 .contact_page__form {
@@ -1127,6 +1131,34 @@ footer .copyright{
         font-size: 7vw;
     }
 }
+@media only screen and (max-width: 650px) {
+    .contact_page__content {
+        grid-template-columns: 100%;
+        gap: 50px;
+    }
+  
+    .contact_page__form {
+        margin: 0 !important;
+    }
+  
+    .contact_page__wrapper {
+        padding: 30px 10px;
+    }
+  
+    .contact_page__title {
+        margin-bottom: unset;
+    }
+  
+    .line-right, 
+    .line-left {
+        display: none;
+    }
+  
+    .contact_page__header {
+        justify-content: center;
+        padding: 30px 10px;
+    }
+  } 
 @media screen and (max-width: 481px){
     .header .header-text p {
         font-size: 4.5vw;
