@@ -364,24 +364,20 @@ nav .nav_links a.active:after {
 }
 .news-wrapper .content-wrapper .text-wrapper h1 {
     color: #fff;
-    max-width: 18vw;
     text-align: left;
     font-size: 1.5vw;
-    line-height: 28px;
 }
 .news-wrapper .content-wrapper .text-wrapper p {
-    max-width: 18vw;
     font-size: 1.1vw;
-    line-height: 16px;
+    width: 55%;
     color: #A7A7A7;
 }
 .news-wrapper .content-wrapper .text-wrapper .btn {
     position: relative;
-    height: 2vw;
     background: #17597F;
     border-radius: 1.5vw 0 1.5vw 0;
     font-size: 1.3vw;
-    line-height: 18px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -390,8 +386,7 @@ nav .nav_links a.active:after {
     color: #FFFFFF;
     transition: 0.3s;
     padding: 0.5vw 1vw;
-    width: max-content;
-    max-width: 18vw;
+    width: 25%;
 }
 .news-wrapper .content-wrapper .text-wrapper .btn:hover {
     background: #fff;
@@ -1010,6 +1005,29 @@ footer .copyright{
     .about-us .text-wrapper p{
         font-size: 3vw;
         text-align: center;
+    }
+
+    .news-wrapper{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10vw;
+    }
+    .news-wrapper .news-box{
+        width: 90%;
+        height: 60vw;
+        border-radius: 6vw 0 6vw 0;
+    }
+    .news-wrapper .content-wrapper .text-wrapper h1{
+        font-size: 7vw;
+    }
+    .news-wrapper .content-wrapper .text-wrapper p{
+        font-size: 5vw;
+    }
+    .news-wrapper .content-wrapper .text-wrapper .btn{
+        padding: 3vw 4vw;
+        font-size: 3vw;
+        border-radius: 3vw 0 3vw 0;
     }
 
     .projects .projects-wrapper{
