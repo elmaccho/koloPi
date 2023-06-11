@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: rgb(6,7,46);
-    background: linear-gradient(180deg, #06072e 45%, #0e2f56 80%, #000508 100%);
+    background: linear-gradient(180deg, #06072e 50%, #0e2f56 80%, #000508 100%);
 }
 
 .openNavBtn {
@@ -78,6 +78,7 @@ body {
 
 .title h1{
     font-size: 5vw;
+    text-align: center;
     color: white;
 }
 
@@ -187,7 +188,7 @@ nav .nav_links a.active:after {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding: 10vw 0 0; */
+    padding: 5vw 0 0 0;
 
     background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
@@ -253,7 +254,6 @@ nav .nav_links a.active:after {
     height: 100%;
     width: 100%;
     border-radius: 45px 0 45px 0;
-    box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.478);
 }
 .about-us .text-wrapper {
     width: 55%;
@@ -283,38 +283,6 @@ nav .nav_links a.active:after {
     justify-content: center;
     align-items: center;
     padding-bottom: 25px;
-}
-.news .title .line-left span {
-    position: absolute;
-    width: 100%;
-    height: 1vw;
-    background-color: #ffffff;
-}
-.news .title .line-left span::after {
-    content: "";
-    position: absolute;
-    width: 2.6vw;
-    height: 2.6vw;
-    right: 0;
-    top: 50%;
-    transform: translate(50%, -50%) rotate(45deg);
-    background-color: #ffffff;
-}
-.news .title .line-right span {
-    position: absolute;
-    width: 100%;
-    height: 1vw;
-    background-color: #ffffff;
-}
-.news .title .line-right span::before {
-    content: "";
-    position: absolute;
-    width: 2.6vw;
-    height: 2.6vw;
-    left: 0;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background-color: #ffffff;
 }
 
 .news-wrapper{
@@ -409,38 +377,6 @@ nav .nav_links a.active:after {
     justify-content: center;
     align-items: center;
 }
-.projects .title .line-left span {
-    position: absolute;
-    width: 100%;
-    height: 1vw;
-    background-color: #ffffff;
-}
-.projects .title .line-left span::after {
-    content: "";
-    position: absolute;
-    width: 2.6vw;
-    height: 2.6vw;
-    right: 0;
-    top: 50%;
-    transform: translate(50%, -50%) rotate(45deg);
-    background-color: #ffffff;
-}
-.projects .title .line-right span {
-    position: absolute;
-    width: 100%;
-    height: 1vw;
-    background-color: #ffffff;
-}
-.projects .title .line-right span::before {
-    content: "";
-    position: absolute;
-    width: 2.6vw;
-    height: 2.6vw;
-    left: 0;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background-color: #ffffff;
-}
 .projects .projects-wrapper {
     padding: 50px 25px;
     height: 100%;
@@ -451,9 +387,10 @@ nav .nav_links a.active:after {
 }
 .projects .projects-wrapper .box-wrapper {
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-    background-color: #06072E;
+    background-color: #ffffff;
     width: 23vw;
     padding: 2vw 2.4vw;
+    border-radius: 1vw;
     display: flex;
     flex-direction: column;
     transition: 0.3s;
@@ -462,12 +399,12 @@ nav .nav_links a.active:after {
 .projects .projects-wrapper .box-wrapper h1 {
     font-size: 1.5vw;
     min-height: 8vw;
-    color: white;
+    color: #232323;
 }
 .projects .projects-wrapper .box-wrapper p {
     min-height: 10vw;
     font-size: 1.1vw;
-    color: #ffffff;
+    color: #232323;
     width: 25vw;
 }
 .projects .projects-wrapper .box-wrapper .photo {
@@ -503,7 +440,7 @@ nav .nav_links a.active:after {
     transition: 0.3s;
     font-size: 1.3vw;
     cursor: pointer;
-    color: #ffffff;
+    color: #232323;
 }
 .projects .projects-wrapper .box-wrapper .hashtags span:hover {
     color: #3787C4;
@@ -521,9 +458,7 @@ nav .nav_links a.active:after {
     align-items: center;
 }
 .team .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 .team .title .line-left span {
     position: absolute;
@@ -652,7 +587,7 @@ nav .nav_links a.active:after {
     pointer-events: none;
 }
 
-.team .seeMoreBtn{
+.team .seeMoreTeamBtn{
     padding: 1.3vw 5vw;
     margin: 2vw;
     background-color: #0c0d45;
@@ -664,7 +599,7 @@ nav .nav_links a.active:after {
     border-radius: 15px;
     transition: 0.3s;
 }
-.team .seeMoreBtn:hover{
+.team .seeMoreTeamBtn:hover{
     opacity: 75%;
 }
 
@@ -752,12 +687,7 @@ nav .nav_links a.active:after {
 }
 
 .contact_page__title {
-    font-weight: 900;
-    font-size: 5vw;
-    line-height: 64px;
     margin-bottom: 86px;
-    text-align: center;
-    color: white;
 }
   
 .contact_page__wrapper {
@@ -1037,7 +967,8 @@ footer .copyright{
         gap: 10vw;
     }
     .projects .projects-wrapper .box-wrapper{
-        width: 100%;
+        width: 95%;
+        padding: 6vw 5vw;
     }
     .projects .projects-wrapper .box-wrapper h1{
         font-size: 5vw;
@@ -1075,7 +1006,7 @@ footer .copyright{
         font-size: 5vw;
         width: 100%;
     }
-    .team .seeMoreBtn{
+    .team .seeMoreTeamBtn{
         font-size: 5vw;
         padding: 3vw 8vw;
     }
@@ -1172,9 +1103,25 @@ footer .copyright{
     }
 } 
 @media screen and (max-width: 481px){
+    .title h1{
+        font-size: 12vw;
+    }
+
+
     .header .header-text p {
         font-size: 4.5vw;
     }
+    .about-us .img-wrapper{
+        width: 95%;
+    }
+    .about-us .text-wrapper{
+        width: 95%;
+    }
+    .about-us .text-wrapper p{
+        font-size: 4.5vw;
+        text-align: left;
+    }
+    
 
     .view-info .info-wrapper{
         height: 140vw;

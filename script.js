@@ -20,7 +20,7 @@ const closeInfoBtn = document.querySelector('.closeInfoBtn')
 const body = document.querySelector('body')
 
 const teamRows = document.querySelectorAll(".team-row");
-const seeMoreBtn = document.querySelector('.seeMoreBtn')
+const seeMoreTeamBtn = document.querySelector('.seeMoreTeamBtn')
 
 let currentIndex = 1;
 
@@ -274,7 +274,7 @@ const showNextTeamRow = () => {
     currentIndex++;
 
     if (currentIndex === teamRows.length) {
-      document.querySelector(".seeMoreBtn").style.display = "none";
+      document.querySelector(".seeMoreTeamBtn").style.display = "none";
     }
   }
 }
@@ -290,7 +290,7 @@ for (let teamBox of teamBoxes) {
 closeNavBtn.addEventListener('click', closeNavMen)
 openNavBtn.addEventListener('click', openNavMen)
 window.addEventListener('scroll', navScroll)
-seeMoreBtn.addEventListener('click', showNextTeamRow)
+seeMoreTeamBtn.addEventListener('click', showNextTeamRow)
 closeInfoBtn.addEventListener('click', closeInfoBox)
 
 document.addEventListener("DOMContentLoaded", navHighlight);
