@@ -20,9 +20,13 @@ const closeInfoBtn = document.querySelector('.closeInfoBtn')
 const body = document.querySelector('body')
 
 const teamRows = document.querySelectorAll(".team-row");
-const seeMoreTeamBtn = document.querySelector('.seeMoreTeamBtn')
+const moreTeam = document.querySelector('#moreTeam')
 
-let currentIndex = 1;
+const projectsRows = document.querySelectorAll(".projects-row");
+const moreProjects = document.querySelector('#moreProjects')
+
+let currentTeamIndex = 1;
+let currentProjectsIndex = 1;
 
 const team = [
   {
@@ -239,14 +243,14 @@ const closeInfoBox = (e) => {
     viewInfo.classList.remove('infoBox-open')
     teamWrapper.style.filter = 'blur(0px)'
     nav.style.filter = 'blur(0px)'
-    seeMoreBtn.style.filter = 'blur(0px)'
+    moreTeam.style.filter = 'blur(0px)'
     body.style.overflowY = 'scroll'
   }
   else if (closeInfoBtn.contains(e.target)){
     viewInfo.classList.remove('infoBox-open')
     teamWrapper.style.filter = 'blur(0px)'
     nav.style.filter = 'blur(0px)'
-    seeMoreBtn.style.filter = 'blur(0px)'
+    moreTeam.style.filter = 'blur(0px)'
     body.style.overflowY = 'scroll'
   }
 }
@@ -265,16 +269,26 @@ const openInfoBox = (e) => {
 
   teamWrapper.style.filter = 'blur(2px)'
   nav.style.filter = 'blur(2px)'
-  seeMoreBtn.style.filter = 'blur(2px)'
+  moreTeam.style.filter = 'blur(2px)'
   body.style.overflowY = 'hidden'
 }
 const showNextTeamRow = () => {
-  if (currentIndex < teamRows.length) {
-    teamRows[currentIndex].style.display = "flex";
-    currentIndex++;
+  if (currentTeamIndex < teamRows.length) {
+    teamRows[currentTeamIndex].style.display = "flex";
+    currentTeamIndex++;
 
-    if (currentIndex === teamRows.length) {
-      document.querySelector(".seeMoreTeamBtn").style.display = "none";
+    if (currentTeamIndex === teamRows.length) {
+      document.querySelector("#moreTeam").style.display = "none";
+    }
+  }
+}
+const showNextProjectRow = () => {
+  if (currentProjectsIndex < projectsRows.length) {
+    projectsRows[currentProjectsIndex].style.display = "flex";
+    currentProjectsIndex++;
+
+    if (currentProjectsIndex === projectsRows.length) {
+      document.querySelector("#moreProjects").style.display = "none";
     }
   }
 }
@@ -290,7 +304,8 @@ for (let teamBox of teamBoxes) {
 closeNavBtn.addEventListener('click', closeNavMen)
 openNavBtn.addEventListener('click', openNavMen)
 window.addEventListener('scroll', navScroll)
-seeMoreTeamBtn.addEventListener('click', showNextTeamRow)
+moreTeam.addEventListener('click', showNextTeamRow)
+moreProjects.addEventListener('click', showNextProjectRow)
 closeInfoBtn.addEventListener('click', closeInfoBox)
 
 document.addEventListener("DOMContentLoaded", navHighlight);
@@ -301,7 +316,7 @@ document.addEventListener('keydown', function(e) {
     viewInfo.classList.remove('infoBox-open')
     teamWrapper.style.filter = 'blur(0px)'
     nav.style.filter = 'blur(0px)'
-    seeMoreBtn.style.filter = 'blur(0px)'
+    moreTeam.style.filter = 'blur(0px)'
     body.style.overflowY = 'scroll'
   }
 });
