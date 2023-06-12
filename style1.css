@@ -20,6 +20,38 @@
     }
 }
 
+:root, html[data-theme='dark'] {
+    --background-gradient-start: #06072e;
+    --background-gradient-end: rgba(35, 35, 35, 1);
+    --box-shadow: #23232331;
+    --primary-color: #3787C4;
+    --secondary-color: #ffffff;
+    --text-color: #ffffff;
+    --text-color-secondary: #A7A7A7;
+    --button-background: #06072E;
+    --button-hover-background: #fff;
+    --button-text-color: #FFFFFF;
+    --button-hover-text-color: #17597F;
+    --nav-background: #050322ef;
+    --nav-link-active-color: #3787C4;
+}
+
+html[data-theme='light']{
+    --background-gradient-start: rgb(255, 255, 255);
+    --background-gradient-end: rgba(35, 35, 35, 1);
+    --box-shadow: #23232331;
+    --primary-color: #3787C4;
+    --secondary-color: #ffffff;
+    --text-color: #232323;
+    --text-color-secondary: #A7A7A7;
+    --button-background: #06072E;
+    --button-hover-background: #fff;
+    --button-text-color: #FFFFFF;
+    --button-hover-text-color: #17597F;
+    --nav-background: #232323ef;
+    --nav-link-active-color: #3787C4;
+}
+
 * {
     scroll-behavior: smooth;
     margin: 0;
@@ -30,7 +62,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: rgb(6,7,46);
-    background: linear-gradient(180deg, rgba(6,7,46,1) 40%, rgba(14,47,86,1) 89%, rgba(35,35,35,1) 92%);
+    background: linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-start) 89%, var(--background-gradient-end) 92%);
 }
 
 .openNavBtn {
@@ -121,6 +153,35 @@ body {
     transform: translateY(-0.3vw);
 }
 
+.changeTheme{
+    background-color: transparent;
+    width: 2.8vw;
+    height: 2.8vw;
+    /* border: 3px solid white; */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    
+    position: absolute;
+    left: 10vw;
+    overflow: hidden;   
+}
+.changeTheme i{
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+}
+.changeTheme .move1{
+    transform: translateX(-200%);
+}
+.changeTheme .move2{
+    transform: translateX(200%);
+}
+
 .openNavBtn:hover, .closeNavBtn:hover {
     opacity: 75%;
 }
@@ -143,7 +204,7 @@ body {
 .title h1{
     font-size: 5vw;
     text-align: center;
-    color: white;
+    color: var(--text-color);
 }
 
 .title .line-left {
@@ -180,7 +241,7 @@ nav {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     padding: 20px 45px;
-    background-color: #050322ef;
+    background-color: var(--nav-background);
 }
 
 
@@ -254,7 +315,7 @@ nav .nav_links a.active:after {
     align-items: center;
     padding: 5vw 0 0 0;
 
-    background-image: url(./img/background.jpg);
+    background: linear-gradient(180deg, rgba(14,47,86,0) -50%, var(--background-gradient-start)), url(./img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
@@ -282,6 +343,7 @@ nav .nav_links a.active:after {
 .header .header-text p {
     font-size: 1.4vw;
     text-align: left;
+    color: var(--text-color);
 }
 .header .header-logo {
     position: relative;
@@ -307,7 +369,7 @@ nav .nav_links a.active:after {
     display: flex;
     padding: 10vw 0 0;
 
-    background-color: #06072E;
+    background-color: var(--background-gradient-start);
 }
 .about-us .img-wrapper {
     width: 35%;
@@ -334,7 +396,7 @@ nav .nav_links a.active:after {
     color: #3787C4;
 }
 .about-us .text-wrapper p {
-    color: white;
+    color: var(--text-color);
     font-size: 1.5vw;
 }
 
@@ -360,6 +422,7 @@ nav .nav_links a.active:after {
     height: 30vw;
     position: relative;
     border-radius: 1.5vw 0 1.5vw 0;
+    box-shadow: var(--box-shadow) -6px 6px 8px 2px;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -464,7 +527,7 @@ nav .nav_links a.active:after {
     display: none;
 }
 .projects .projects-wrapper .projects-row .projects-box {
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: var(--box-shadow) -5px 5px 15px 0px;
     background-color: #ffffff;
     width: 23vw;
     padding: 2vw 2.4vw;
@@ -661,7 +724,7 @@ nav .nav_links a.active:after {
     font-size: 1.7vw;
     height: 2vw;
     text-align: center;
-    color: white;
+    color: var(--text-color);
     pointer-events: none;
 }
 
@@ -915,6 +978,15 @@ footer .copyright{
     }
     .closeNavBtn{
         display: block;
+    }
+    .changeTheme{
+        position: absolute;
+        bottom: 0;
+        width: 10vw;
+        height: 10vw;
+    }
+    .changeTheme i {
+        font-size: 5vw;
     }
     .seeMoreBtn{
         font-size: 6vw;

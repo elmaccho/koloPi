@@ -25,6 +25,10 @@ const moreTeam = document.querySelector('#moreTeam')
 const projectsRows = document.querySelectorAll(".projects-row");
 const moreProjects = document.querySelector('#moreProjects')
 
+const changeThemeBtn = document.querySelector('.changeTheme')
+const faMoon = document.querySelector('.fa-moon')
+const faSun = document.querySelector('.fa-sun')
+
 let currentTeamIndex = 1;
 let currentProjectsIndex = 1;
 
@@ -292,6 +296,15 @@ const showNextProjectRow = () => {
     }
   }
 }
+const changeTheme = () => {
+  if(faMoon.classList.contains('move1')){
+    faMoon.classList.toggle('move1')
+    faSun.classList.toggle('move2')
+  } else {
+    faMoon.classList.toggle('move1')
+    faSun.classList.toggle('move2')
+  }
+}
 
 for(let navLink of navLinks){
     navLink.addEventListener('click', closeNavMen)
@@ -307,6 +320,7 @@ window.addEventListener('scroll', navScroll)
 moreTeam.addEventListener('click', showNextTeamRow)
 moreProjects.addEventListener('click', showNextProjectRow)
 closeInfoBtn.addEventListener('click', closeInfoBox)
+changeThemeBtn.addEventListener('click', changeTheme)
 
 document.addEventListener("DOMContentLoaded", navHighlight);
 document.addEventListener('click', closeInfoBox)
