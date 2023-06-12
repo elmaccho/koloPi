@@ -1021,6 +1021,10 @@ footer .copyright{
         background-color: #050322;
     }
 
+    .info{
+        font-size: 3.5vw;
+    }
+
 
     nav{
         flex-direction: column;
