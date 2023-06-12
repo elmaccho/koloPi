@@ -66,7 +66,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: rgb(6,7,46);
-    background: linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 89%, var(--background-gradient-end) 92%);
+    background: linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 82%, var(--background-gradient-end) 99%);
 }
 
 .openNavBtn {
@@ -224,6 +224,17 @@ body {
     right: 0;
 }
 
+.info{
+    background-color: var(--background-info-box);
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    color: var(--text-color);
+}
+
 
 
 
@@ -319,7 +330,7 @@ nav .nav_links a.active:after {
     align-items: center;
     padding: 5vw 0 0 0;
 
-    background: linear-gradient(180deg, rgba(14,47,86,0) -50%, var(--background-gradient-start)), url(./img/background.jpg);
+    background: linear-gradient(180deg, rgba(14, 46, 86, 0.392) -50%, var(--background-gradient-start)), url(./img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
@@ -418,8 +429,9 @@ nav .nav_links a.active:after {
 .news-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 5vw 2vw;
+    justify-content: flex-start;
+    padding: 5vw 8vw;
+    gap: 6vw;
 }
 .news-wrapper .news-box {
     width: 25vw;
