@@ -38,6 +38,7 @@
     --background-info-box: #050322;
 
     --background-image: url('./img/blobBG.png');
+    --background-imageMobile: url('./img/blobBGMobile.png');
 }
 
 html[data-theme='light']{
@@ -58,6 +59,7 @@ html[data-theme='light']{
     --background-info-box: white;
 
     --background-image: url('./img/blobBGLight.png');
+    --background-imageMobile: url('./img/blobBGLightMobile.png');
 }
 
 * {
@@ -105,7 +107,7 @@ body {
     right: 5px;
     cursor: pointer;
     transition: 0.3s;
-    color: white;
+    color: var(--text-color);
 
     display: none;
 }
@@ -173,11 +175,11 @@ body {
     cursor: pointer;
     
     position: absolute;
-    left: 10vw;
+    left: 150px;
     overflow: hidden;   
 }
 .changeTheme i{
-    color: white;
+    color: var(--text-color);
     font-size: 1.5vw;
     position: absolute;
     top: 50%;
@@ -261,12 +263,12 @@ nav {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     padding: 20px 45px;
-    background-color: var(--nav-background);
+    background-color: var(--background-info-box);
 }
 
 
 nav h1 {
-    color: white;
+    color: var(--text-color);
     font-size: 30px;
 }
 nav .nav_links {
@@ -277,7 +279,7 @@ nav .nav_links {
 }
 nav .nav_links .classicBtn {
     position: relative;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     transition: 0.3s;
     width: max-content;
@@ -997,6 +999,11 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 768px){
+    body{
+        background:  var(--background-imageMobile), linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 72%, var(--background-gradient-end) 90%); 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .openNavBtn{
         display: block;
     }
@@ -1023,7 +1030,7 @@ footer .copyright{
     .activeNav{
         width: 45%;        
         padding: 15px 25px;
-        background-color: #050322;
+        background-color: var(--background-info-box);
     }
 
     .info{
@@ -1037,7 +1044,7 @@ footer .copyright{
         height: 100%;
         padding: 15px 25px;
         position: fixed;
-        background-color: #050322;
+        background-color: var(--background-info-box);
     }
     nav h1{
         text-align: left;
