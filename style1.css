@@ -22,7 +22,8 @@
 
 :root, html[data-theme='dark'] {
     --background-gradient-start: #06072e;
-    --background-gradient-end: rgba(35, 35, 35, 1);
+    --background-gradient-middle: #1a1b53;
+    --background-gradient-end: rgb(18, 18, 18);
     --box-shadow: #23232331;
     --primary-color: #3787C4;
     --secondary-color: #ffffff;
@@ -34,11 +35,13 @@
     --button-hover-text-color: #17597F;
     --nav-background: #050322ef;
     --nav-link-active-color: #3787C4;
+    --background-info-box: #050322;
 }
 
 html[data-theme='light']{
     --background-gradient-start: rgb(255, 255, 255);
-    --background-gradient-end: rgba(35, 35, 35, 1);
+    --background-gradient-middle: #2323232c;
+    --background-gradient-end: #232323;
     --box-shadow: #23232331;
     --primary-color: #3787C4;
     --secondary-color: #ffffff;
@@ -50,6 +53,7 @@ html[data-theme='light']{
     --button-hover-text-color: #17597F;
     --nav-background: #232323ef;
     --nav-link-active-color: #3787C4;
+    --background-info-box: white;
 }
 
 * {
@@ -62,7 +66,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: rgb(6,7,46);
-    background: linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-start) 89%, var(--background-gradient-end) 92%);
+    background: linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 89%, var(--background-gradient-end) 92%);
 }
 
 .openNavBtn {
@@ -528,7 +532,7 @@ nav .nav_links a.active:after {
 }
 .projects .projects-wrapper .projects-row .projects-box {
     box-shadow: var(--box-shadow) -5px 5px 15px 0px;
-    background-color: #ffffff;
+    background-color: var(--background-info-box);
     width: 23vw;
     padding: 2vw 2.4vw;
     border-radius: 1vw;
@@ -540,12 +544,12 @@ nav .nav_links a.active:after {
 .projects .projects-wrapper .projects-row .projects-box h1 {
     font-size: 1.5vw;
     min-height: 8vw;
-    color: #232323;
+    color: var(--text-color);
 }
 .projects .projects-wrapper .projects-row .projects-box p {
     min-height: 10vw;
     font-size: 1.1vw;
-    color: #232323;
+    color: var(--text-color);
     width: 25vw;
 }
 .projects .projects-wrapper .projects-row .projects-box .photo {
@@ -570,7 +574,7 @@ nav .nav_links a.active:after {
     margin-top: 2vw;
 }
 .projects .projects-wrapper .projects-row .projects-box .hashtags hr {
-    border: 1px solid rgba(35, 35, 35, 0.1490196078);
+    border: 1px solid var(--text-color);
     position: absolute;
     width: 100%;
     top: 0;
@@ -581,7 +585,7 @@ nav .nav_links a.active:after {
     transition: 0.3s;
     font-size: 1.3vw;
     cursor: pointer;
-    color: #232323;
+    color: var(--text-color);
 }
 .projects .projects-wrapper .projects-row .projects-box .hashtags span:hover {
     color: #3787C4;
@@ -644,7 +648,7 @@ nav .nav_links a.active:after {
 .team .team-wrapper .team-row{
     display: flex;
     justify-content: flex-start;
-    gap: 9vw;
+    gap: 5vw;
     width: 100%;
 }
 .team .team-wrapper .team-row:nth-child(2)
@@ -662,13 +666,12 @@ nav .nav_links a.active:after {
 
 .team .team-wrapper .team-row .team-box {
     border-radius: 2vw 0 2vw 0;
-    
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 15vw;
+    width: 20vw;
     gap: 1.5vw;
     transition: 0.3s;
 }
@@ -722,6 +725,7 @@ nav .nav_links a.active:after {
 .team .team-wrapper .team-row .team-box .name {
     font-weight: 600;
     font-size: 1.7vw;
+    width: 100%;
     height: 2vw;
     text-align: center;
     color: var(--text-color);
@@ -753,7 +757,7 @@ nav .nav_links a.active:after {
     padding: 4vw;
     box-sizing: border-box;
     border-radius: 1vw;
-    background-color: white;
+    background-color: var(--background-info-box);
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -780,6 +784,7 @@ nav .nav_links a.active:after {
     position: absolute;
     top:1vw;
     right: 1vw;
+    color: var(--text-color);
 
     font-size: 3vw;
     border: none;
@@ -793,6 +798,7 @@ nav .nav_links a.active:after {
 .info-description .desc-name{
     font-weight: 600;
     font-size: 3vw;
+    color: var(--text-color);
 }
 .info-description .desc-rank{
     color:#3787C4;
@@ -800,6 +806,7 @@ nav .nav_links a.active:after {
 }
 .info-description .desc-description{
     padding-top: 3vw;
+    color: var(--text-color);
 }
 .info-description hr{
     border:2px solid #06072E;
@@ -1144,7 +1151,7 @@ footer .copyright{
         gap: 18vw;
     }
     .team .team-wrapper .team-row .team-box{
-        width: 45vw;
+        width: 60vw;
     }
     .team .team-wrapper .team-row .team-box .circle{
         width: 43vw;

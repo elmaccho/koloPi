@@ -300,9 +300,11 @@ const changeTheme = () => {
   if(faMoon.classList.contains('move1')){
     faMoon.classList.toggle('move1')
     faSun.classList.toggle('move2')
+    document.documentElement.setAttribute("data-theme", "light")
   } else {
     faMoon.classList.toggle('move1')
     faSun.classList.toggle('move2')
+    document.documentElement.setAttribute("data-theme", "dark")
   }
 }
 
