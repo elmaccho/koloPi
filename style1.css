@@ -36,6 +36,8 @@
     --nav-background: #050322ef;
     --nav-link-active-color: #3787C4;
     --background-info-box: #050322;
+
+    --background-image: url('./img/blobBG.png');
 }
 
 html[data-theme='light']{
@@ -54,6 +56,8 @@ html[data-theme='light']{
     --nav-background: #232323ef;
     --nav-link-active-color: #3787C4;
     --background-info-box: white;
+
+    --background-image: url('./img/blobBGLight.png');
 }
 
 * {
@@ -66,7 +70,9 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: rgb(6,7,46);
-    background: linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 72%, var(--background-gradient-end) 90%);
+    background:  var(--background-image), linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 72%, var(--background-gradient-end) 90%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .openNavBtn {
@@ -225,7 +231,6 @@ body {
 }
 
 .info{
-    background-color: var(--background-info-box);
     width: 100%;
     height: 4vw;
     display: flex;
