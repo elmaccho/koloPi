@@ -66,7 +66,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: rgb(6,7,46);
-    background: linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 82%, var(--background-gradient-end) 99%);
+    background: linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 72%, var(--background-gradient-end) 90%);
 }
 
 .openNavBtn {
