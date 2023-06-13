@@ -81,6 +81,7 @@
                     Chwilowo brak. Zalecamy uzbroić się w cierpliwość :)
                 </div> -->
 
+                
 
             <div class="news-row">
                 <div class="news-box">
@@ -122,35 +123,10 @@
                     </div>
                 </div>
             </div>
-            <div class="news-row">
-                <div class="news-box">
-                    <div class="news-background">
-                                <img src="./img/newsy/n4.png" alt="">
-                    </div>
-                    <div class="content-wrapper">
-                                <div class="text-wrapper">
-                                    <h1>12.06.2023r</h1>
-                                    <p>Kiedy podwarszawska szkoła pisze do Dziekana z prośbą o szkolenie dla młodzieży to kto rusza w te pędy... MY! Z naszą prezentacją dot. cyberzagrożeń odwiedziliśmy finałową galę "I Powiatowego Konkursu Informatycznego" w Zielonce. Wydaje nam się, że za parę lat to Ci młodzi przejmą od nas pałeczkę w kole PI. Póki co z całego serca dziękujemy za zaproszenie i jest nam niezmiernie miło, że było nam dane reprezentować naszą Alma Mater. Zapraszmy na UTH Radom a tym bardziej do koła PI, gdy już będziecie z nami studiować. Wspanialych ludzi jest tu wiecej niż, nieskromnie pisząc, my :)</p>
-                                </div>
-                    </div>
-                </div>
-    
-                <div class="news-box">
-                    <div class="news-background">
-                                <img src="./img/newsy/n5.gif" alt="">
-                    </div>
-                    <div class="content-wrapper">
-                                <div class="text-wrapper">
-                                    <h1>14.06.2023r</h1>
-                                    <p>Walnę, ale w co! WALNE ale zgromadzenie koła PI już w tę środę o 13:15 w Olimpie. Jeśli się pomieścimy to w pokoju 210 p. Porucznika a jeśli nie to na trawce pod zielonym "maluszkiem" (Wy wiecie, o kim mówimy!). Troche pogadamy, trochę się przegrupujemy, opowiemy o projektach na przyszłość, ustalimy termin ogniska (pozdrowienia dla p. Teresy z sekretariatu WTEiI - bez Pani ognisko nie odbędzie się) a przede wszystkim dowiecie się, w jakim kierunku zmierzamy. Do zob w śr o 1:15 - pozdro 600 na rejonie! Pamietajcie o Wednesday inaczej „rąsia” przyjdzie…</p>
-                                </div>
-                    </div>
-                </div>
-            </div>
 
 
 
-            
+
         </div>
         
         <button id="moreNews" class="seeMoreBtn">
