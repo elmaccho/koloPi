@@ -25,11 +25,15 @@ const moreTeam = document.querySelector('#moreTeam')
 const projectsRows = document.querySelectorAll(".projects-row");
 const moreProjects = document.querySelector('#moreProjects')
 
+const newsRows = document.querySelectorAll(".news-row");
+const moreNews = document.querySelector('#moreNews')
+
 const changeThemeBtn = document.querySelector('.changeTheme')
 const faMoon = document.querySelector('.fa-moon')
 const faSun = document.querySelector('.fa-sun')
 
 let currentTeamIndex = 1;
+let currentNewsIndex = 1;
 let currentProjectsIndex = 1;
 
 const team = [
@@ -286,6 +290,16 @@ const showNextTeamRow = () => {
     }
   }
 }
+const showNextNewsRow = () => {
+  if (currentNewsIndex < newsRows.length) {
+    newsRows[currentNewsIndex].style.display = "flex";
+    currentNewsIndex++;
+
+    if (currentNewsIndex === newsRows.length) {
+      document.querySelector("#moreNews").style.display = "none";
+    }
+  }
+}
 const showNextProjectRow = () => {
   if (currentProjectsIndex < projectsRows.length) {
     projectsRows[currentProjectsIndex].style.display = "flex";
@@ -319,8 +333,11 @@ for (let teamBox of teamBoxes) {
 closeNavBtn.addEventListener('click', closeNavMen)
 openNavBtn.addEventListener('click', openNavMen)
 window.addEventListener('scroll', navScroll)
+
 moreTeam.addEventListener('click', showNextTeamRow)
 moreProjects.addEventListener('click', showNextProjectRow)
+moreNews.addEventListener('click', showNextNewsRow)
+
 closeInfoBtn.addEventListener('click', closeInfoBox)
 changeThemeBtn.addEventListener('click', changeTheme)
 
