@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasjonaci Informatyki</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4798a03daf.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/img/logo/favicon.png" type="image/x-icon">
 
@@ -81,36 +81,32 @@
                     Chwilowo brak. Zalecamy uzbroić się w cierpliwość :)
                 </div> -->
 
-                
-
             <div class="news-row">
+
                 <div class="news-box">
                     <div class="news-background">
-                                <img src="./img/newsy/n1.png" alt="">
+                                <img src="./img/newsy/n5.gif" alt="">
                     </div>
                     <div class="content-wrapper">
                                 <div class="text-wrapper">
-                                    <h1>26.05.2023r</h1>
-                                    <p>Spotkanie z kierownictwem WTEiI UTH Radom. Było nam miło usłyszeć, jak wiele udało się osiągnąć samą inicjatywą naszego działania. Wskazaliśmy wektory rozwoju bieżących projektów a z drugiej strony usłyszeliśmy, jakie działania byłyby mile oczekiwane. To bardzo miłe spotkanie to tylko początek. Zwłaszcza, że mamy obiecane... ognisko inauguracyjne. Wspaniałe wsparcie - dziekujemy!
-                                    </p>
+                                    <h1>14.06.2023r</h1>
+                                    <p>Walnę, ale w co! WALNE ale zgromadzenie koła PI już w tę środę o 13:15 w Olimpie. Jeśli się pomieścimy to w pokoju 210 p. Porucznika a jeśli nie to na trawce pod zielonym "maluszkiem" (Wy wiecie, o kim mówimy!). Troche pogadamy, trochę się przegrupujemy, opowiemy o projektach na przyszłość, ustalimy termin ogniska (pozdrowienia dla p. Teresy z sekretariatu WTEiI - bez Pani ognisko nie odbędzie się) a przede wszystkim dowiecie się, w jakim kierunku zmierzamy. Do zob w śr o 1:15 - pozdro 600 na rejonie! Pamietajcie o Wednesday inaczej „rąsia” przyjdzie…</p>
                                 </div>
                     </div>
                 </div>
-    
+
                 <div class="news-box">
-                    <div class="news-background">
-                                <img src="./img/newsy/n2.png" alt="">
-                    </div>
-                    <div class="content-wrapper">
-                                <div class="text-wrapper">
-                                    <h1>01.06.2023r</h1>
-                                    <p>
-                                        Dział Promocji UTH Radom to nasi najlepsi <i><b>"przyjaciele"</b></i> na Uczelni. Pomogli nam wydrukować wlepki na Juwenalia, których QR prowadzi do naszej strony. Przypominamy o kulturalnym naklejaniu wlepek w odpowiednich miejscach i szacunku dla własności innych. Dziękujemy ,,ekipie Promek" UTH Radom! Jesteście super! - P. Ewelina, p. Michał i p. Bartek, czyli "debesty".
-                                    </p>
-                                </div>
-                    </div>
+                        <div class="news-background">
+                                    <img src="./img/newsy/n4.png" alt="">
+                        </div>
+                        <div class="content-wrapper">
+                                    <div class="text-wrapper">
+                                        <h1>12.06.2023r</h1>
+                                        <p>Kiedy podwarszawska szkoła pisze do Dziekana z prośbą o szkolenie dla młodzieży to kto rusza w te pędy... MY! Z naszą prezentacją dot. cyberzagrożeń odwiedziliśmy finałową galę "I Powiatowego Konkursu Informatycznego" w Zielonce. Wydaje nam się, że za parę lat to Ci młodzi przejmą od nas pałeczkę w kole PI. Póki co z całego serca dziękujemy za zaproszenie i jest nam niezmiernie miło, że było nam dane reprezentować naszą Alma Mater. Zapraszmy na UTH Radom a tym bardziej do koła PI, gdy już będziecie z nami studiować. Wspanialych ludzi jest tu wiecej niż, nieskromnie pisząc, my :)</p>
+                                    </div>
+                        </div>
                 </div>
-    
+        
                 <div class="news-box">
                     <div class="news-background">
                                 <img src="./img/newsy/n3.png" alt="">
@@ -124,8 +120,37 @@
                 </div>
             </div>
 
+            <div class="news-row">
 
+                <div class="news-box">
+                    <div class="news-background">
+                                <img src="./img/newsy/n2.png" alt="">
+                    </div>
+                    <div class="content-wrapper">
+                                <div class="text-wrapper">
+                                    <h1>01.06.2023r</h1>
+                                    <p>
+                                        Dział Promocji UTH Radom to nasi najlepsi <i><b>"przyjaciele"</b></i> na Uczelni. Pomogli nam wydrukować wlepki na Juwenalia, których QR prowadzi do naszej strony. Przypominamy o kulturalnym naklejaniu wlepek w odpowiednich miejscach i szacunku dla własności innych. Dziękujemy ,,ekipie Promek" UTH Radom! Jesteście super! - P. Ewelina, p. Michał i p. Bartek, czyli "debesty".
+                                    </p>
+                                </div>
+                    </div>
+                </div>
 
+                <div class="news-box">
+                    <div class="news-background">
+                                <img src="./img/newsy/n1.png" alt="">
+                    </div>
+                    <div class="content-wrapper">
+                                <div class="text-wrapper">
+                                    <h1>26.05.2023r</h1>
+                                    <p>Spotkanie z kierownictwem WTEiI UTH Radom. Było nam miło usłyszeć, jak wiele udało się osiągnąć samą inicjatywą naszego działania. Wskazaliśmy wektory rozwoju bieżących projektów a z drugiej strony usłyszeliśmy, jakie działania byłyby mile oczekiwane. To bardzo miłe spotkanie to tylko początek. Zwłaszcza, że mamy obiecane... ognisko inauguracyjne. Wspaniałe wsparcie - dziekujemy!
+                                    </p>
+                                </div>
+                    </div>
+                </div>
+    
+
+            </div>
 
         </div>
         
@@ -135,7 +160,7 @@
                 <i class="fa-solid fa-chevron-down"></i>
                 <i class="fa-solid fa-chevron-down"></i>
             </span>
-            Wyświetl więcej
+            Pokaż wcześniejsze
             <span class="icon-wrapper">
                 <i class="fa-solid fa-chevron-down"></i>
                 <i class="fa-solid fa-chevron-down"></i>
