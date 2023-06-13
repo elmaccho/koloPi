@@ -1,3 +1,4 @@
+<?php include 'sending.php'; ?>
 <!DOCTYPE html>
 <html lang="pl" data-theme="dark">
 <head>
