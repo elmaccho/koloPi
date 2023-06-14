@@ -54,7 +54,7 @@
 
     <section id="aboutUs" class="about-us">
         <div class="img-wrapper">
-            <img src="./img/logo/PiHQ.png" alt="zdjęcie wkrótce...">
+            <img src="./img/team/team.png" alt="zdjęcie grupowe koła PI">
         </div>
         <div class="text-wrapper">
             <h1>O nas</h1>
