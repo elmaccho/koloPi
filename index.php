@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasjonaci Informatyki</title>
+
+    <meta name="description" content="Jesteśmy zespołem studentów Wydziału Transportu, Elektrotechniki i 
+    Informatyki UTH w Radomiu i oddanymi pasjonatami informatyki, których celem jest popularyzacja IT i 
+    cyberbezpieczeństwa - dołącz do nas!">
+
+    <title>Koło Pi - Pasjonaci Informatyki</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/logo/apple-touch-icon.png">
+    <link rel="icon" href="/img/logo/favicon.ico" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/4798a03daf.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="/img/logo/favicon.png" type="image/x-icon">
 
 </head>
 <body>
@@ -36,7 +43,7 @@
 
     <section id="start" class="header">
         <div class="header-text">
-            <h1><span>Trzeba</span> dorosnąć</h1>
+            <h2><span>Trzeba</span> dorosnąć</h2>
             <p>
                by zrozumieć, że studia to najlepszy czas w życiu. Trzeba zrozumieć, że trzeba tutaj 
                zdobywać wiedzę, a nie cyklicznie likwidować szare komórki. Trzeba zrozumieć, że po 
@@ -47,8 +54,8 @@
             </p>
         </div>
         <div class="header-logo">
-            <img class="logoHQ" src="./img/logo/PiHQ.png" alt="">
-            <img class="lines linesRotate" src="./img/logo/lines.png" alt="">
+            <img class="logoHQ" src="./img/logo/PiHQ.png" alt="Koło PI logo">
+            <img class="lines linesRotate" src="./img/logo/lines.png" alt="lines">
         </div>
     </section>
 
@@ -57,7 +64,7 @@
             <img src="./img/team/team.png" alt="zdjęcie grupowe koła PI">
         </div>
         <div class="text-wrapper">
-            <h1>O nas</h1>
+            <h2>O nas</h2>
 
             <p>
                 Jesteśmy zespołem studentów Wydziału Transportu, Elektrotechniki i Informatyki
@@ -72,9 +79,7 @@
 
     <section id="news" class="news">
         <div class="title">
-            <div class="line-left"><span></span></div>
-            <h1>Aktualności</h1>
-            <div class="line-right"><span></span></div>
+            <h2 class="sectionTitle">Aktualności</h2>
         </div>
         <div class="news-wrapper">
                 <!-- <div class="info">
@@ -85,11 +90,11 @@
 
                 <div class="news-box">
                     <div class="news-background">
-                                <img src="./img/newsy/n5.gif" alt="">
+                                <img src="./img/newsy/n5.gif" alt="Newsy koło pi">
                     </div>
                     <div class="content-wrapper">
                                 <div class="text-wrapper">
-                                    <h1>14.06.2023r</h1>
+                                    <h3>14.06.2023r</h3>
                                     <p>Walnę, ale w co! WALNE ale zgromadzenie koła PI już w tę środę o 13:15 w Olimpie. Jeśli się pomieścimy to w pokoju 210 p. Porucznika a jeśli nie to na trawce pod zielonym "maluszkiem" (Wy wiecie, o kim mówimy!). Troche pogadamy, trochę się przegrupujemy, opowiemy o projektach na przyszłość, ustalimy termin ogniska (pozdrowienia dla p. Teresy z sekretariatu WTEiI - bez Pani ognisko nie odbędzie się) a przede wszystkim dowiecie się, w jakim kierunku zmierzamy. Do zob w śr o 1:15 - pozdro 600 na rejonie! Pamietajcie o Wednesday inaczej „rąsia” przyjdzie…</p>
                                 </div>
                     </div>
@@ -97,11 +102,11 @@
 
                 <div class="news-box">
                         <div class="news-background">
-                                    <img src="./img/newsy/n4.png" alt="">
+                                    <img src="./img/newsy/n4.png" alt="Newsy koło pi">
                         </div>
                         <div class="content-wrapper">
                                     <div class="text-wrapper">
-                                        <h1>12.06.2023r</h1>
+                                        <h3>12.06.2023r</h3>
                                         <p>Kiedy podwarszawska szkoła pisze do Dziekana z prośbą o szkolenie dla młodzieży to kto rusza w te pędy... MY! Z naszą prezentacją dot. cyberzagrożeń odwiedziliśmy finałową galę "I Powiatowego Konkursu Informatycznego" w Zielonce. Wydaje nam się, że za parę lat to Ci młodzi przejmą od nas pałeczkę w kole PI. Póki co z całego serca dziękujemy za zaproszenie i jest nam niezmiernie miło, że było nam dane reprezentować naszą Alma Mater. Zapraszmy na UTH Radom a tym bardziej do koła PI, gdy już będziecie z nami studiować. Wspanialych ludzi jest tu wiecej niż, nieskromnie pisząc, my :)</p>
                                     </div>
                         </div>
@@ -109,11 +114,11 @@
         
                 <div class="news-box">
                     <div class="news-background">
-                                <img src="./img/newsy/n3.png" alt="">
+                                <img src="./img/newsy/n3.png" alt="Newsy koło pi">
                     </div>
                     <div class="content-wrapper">
                                 <div class="text-wrapper">
-                                    <h1>02.06.2023r</h1>
+                                    <h3>02.06.2023r</h3>
                                     <p>Na prośbę kierownictwa Wydziału, odpowiedzieliśmy p. Porucznikowi i zorganizowaliśmy cykl prelekcji związanych z cyberbezpieczeństwem w ramach "Dni Bezpieczeństwa". Mimo ograniczonego czasu przed sesją, daliśmy radę. Chcemy zrobić jeszcze więcej dla Pani Justynki, bo to niesamowita osoba! Nasza prezentacja nie jest wynalazkiem czy innowacyjnym przedmiotem, ale jeśli przynajmniej jedna osoba zrozumie współczesne zagrożenia, głównie w sieci, to było warto! Było wspaniale pokazać nasze koło PI na tym wydarzeniu zewnętrznym.</p>
                                 </div>
                     </div>
@@ -124,11 +129,11 @@
 
                 <div class="news-box">
                     <div class="news-background">
-                                <img src="./img/newsy/n2.png" alt="">
+                                <img src="./img/newsy/n2.png" alt="Newsy koło pi">
                     </div>
                     <div class="content-wrapper">
                                 <div class="text-wrapper">
-                                    <h1>01.06.2023r</h1>
+                                    <h3>01.06.2023r</h3>
                                     <p>
                                         Dział Promocji UTH Radom to nasi najlepsi <i><b>"przyjaciele"</b></i> na Uczelni. Pomogli nam wydrukować wlepki na Juwenalia, których QR prowadzi do naszej strony. Przypominamy o kulturalnym naklejaniu wlepek w odpowiednich miejscach i szacunku dla własności innych. Dziękujemy ,,ekipie Promek" UTH Radom! Jesteście super! - P. Ewelina, p. Michał i p. Bartek, czyli "debesty".
                                     </p>
@@ -138,11 +143,11 @@
 
                 <div class="news-box">
                     <div class="news-background">
-                                <img src="./img/newsy/n1.png" alt="">
+                                <img src="./img/newsy/n1.png" alt="Newsy koło pi">
                     </div>
                     <div class="content-wrapper">
                                 <div class="text-wrapper">
-                                    <h1>26.05.2023r</h1>
+                                    <h3>26.05.2023r</h3>
                                     <p>Spotkanie z kierownictwem WTEiI UTH Radom. Było nam miło usłyszeć, jak wiele udało się osiągnąć samą inicjatywą naszego działania. Wskazaliśmy wektory rozwoju bieżących projektów a z drugiej strony usłyszeliśmy, jakie działania byłyby mile oczekiwane. To bardzo miłe spotkanie to tylko początek. Zwłaszcza, że mamy obiecane... ognisko inauguracyjne. Wspaniałe wsparcie - dziekujemy!
                                     </p>
                                 </div>
@@ -171,25 +176,23 @@
 
     <section id="projects" class="projects">
         <div class="title">
-            <div class="line-left"><span></span></div>
-            <h1>Projekty</h1>
-            <div class="line-right"><span></span></div>
+            <h2 class="sectionTitle">Projekty</h2>
         </div>
 
         <div class="projects-wrapper">
             <div class="projects-row">
                 <div class="projects-box">
-                    <h1>Strona internetowa i Instagramowy profil Koła</h1>
+                    <h3>Strona internetowa i Instagramowy profil Koła</h3>
     
                     <div class="text">
                         <p>
                             Właśnie na nią patrzycie, więc co pisać więcej...
-                            Zapraszamy także na naszego Instagrama -  <a class="link" href="https://www.instagram.com/kolopi_uthrad/" target="_blank">@kolopi_uthrad.</a>
+                            Zapraszamy także na naszego Instagrama -  <a class="link" href="https://www.instagram.com/kolopi_uthrad/" target="_blank" rel="noopener">@kolopi_uthrad.</a>
                         </p>
                     </div>
     
                     <div class="photo">
-                        <img src="./img/proj 1.jpeg" alt="">
+                        <img src="./img/proj 1.jpeg" alt="Projekt 1">
                     </div>
     
                     <div class="hashtags">
@@ -200,7 +203,7 @@
                 </div>
     
                 <div class="projects-box">
-                    <h1>Prezentacja ,,bezPIeczni w sieci dla dzieci i mlodzieży"</h1>
+                    <h3>Prezentacja ,,bezPIeczni w sieci dla dzieci i mlodzieży"</h3>
     
                     <div class="text">
                         <p>
@@ -211,7 +214,7 @@
                     </div>
     
                     <div class="photo">
-                        <img src="./img/thumbnail_proj 2.jpg" alt="">
+                        <img src="./img/thumbnail_proj 2.jpg" alt="Projekt 2">
                     </div>
     
                     <div class="hashtags">
@@ -223,7 +226,7 @@
                 </div>
     
                 <div class="projects-box">
-                    <h1>Publikacja "Algorytmy informatyczne dla niepełnosprawnych"</h1>
+                    <h3>Publikacja "Algorytmy informatyczne dla niepełnosprawnych"</h3>
     
                     <div class="text">
                         <p>
@@ -234,7 +237,7 @@
                     </div>
     
                     <div class="photo">
-                        <img src="./img/thumbnail_proj 3.jpg" alt="">
+                        <img src="./img/thumbnail_proj 3.jpg" alt="Projekt 3">
                     </div>
     
                     <div class="hashtags">
@@ -246,7 +249,7 @@
             </div>
             <div class="projects-row">
                 <div class="projects-box">
-                    <h1>Spotkania i wykłady</h1>
+                    <h3>Spotkania i wykłady</h3>
     
                     <div class="text">
                         <p>
@@ -255,7 +258,7 @@
                     </div>
     
                     <div class="photo">
-                        <img src="./img/thumbnail_proj 4.jpg" alt="">
+                        <img src="./img/thumbnail_proj 4.jpg" alt="Projekt 4">
                     </div>
     
                     <div class="hashtags">
@@ -285,7 +288,7 @@
 
     <section id="team" class="team">
         <div class="title">
-            <h1>Poznaj nasz zespół!</h1>
+            <h2 class="sectionTitle">Poznaj nasz zespół!</h2>
         </div>
 
         <div class="team-wrapper">
@@ -293,7 +296,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="./img/team/opiekun kola.jpg" alt="">
+                            <img src="./img/team/opiekun kola.jpg" alt="Opiekun koła PI">
                         </div>
                     </div>
                     <div class="name">Opiekun Koła <br> Porucznik</div>
@@ -304,7 +307,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Wiktor Wikalinski.jpg" alt="">
+                            <img src="img/team/Wiktor Wikalinski.jpg" alt="Wiktor Wikaliński">
                         </div>
                     </div>
                     <div class="name">Wiktor Wikaliński</div>
@@ -315,7 +318,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Zuzanna Wypchlo.jpg" alt="">
+                            <img src="img/team/Zuzanna Wypchlo.jpg" alt="Zuzanna Wypchło">
                         </div>
                     </div>
                     <div class="name">Zuzanna Wypchło</div>
@@ -326,7 +329,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Patryk Staniszewski.jpg" alt="">
+                            <img src="img/team/Patryk Staniszewski.jpg" alt="Patryk Staniszewski">
                         </div>
                     </div>
                     <div class="name">Patryk Staniszewski</div>
@@ -340,7 +343,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Maciej Chojnacki.jpg" alt="">
+                            <img src="img/team/Maciej Chojnacki.jpg" alt="Maciej Chojnacki">
                         </div>
                     </div>
                     <div class="name">Maciej Chojnacki</div>
@@ -351,7 +354,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Sebastian Sitek.jpg" alt="">
+                            <img src="img/team/Sebastian Sitek.jpg" alt="Sebastian Sitek">
                         </div>
                     </div>
                     <div class="name">Sebastian Sitek</div>
@@ -362,7 +365,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Kacper Zielinski.jpg" alt="">
+                            <img src="img/team/Kacper Zielinski.jpg" alt="Kacper Zieliński">
                         </div>
                     </div>
                     <div class="name">Kacper Zieliński</div>
@@ -373,7 +376,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Dawid Karsznia.png" alt="">
+                            <img src="img/team/Dawid Karsznia.png" alt="Dawid Karsznia">
                         </div>
                     </div>
                     <div class="name">Dawid Karsznia</div>
@@ -385,7 +388,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Krystian Glogowski.jpg" alt="">
+                            <img src="img/team/Krystian Glogowski.jpg" alt="Krystian Głogowski">
                         </div>
                     </div>
                     <div class="name">Krystian Głogowski</div>
@@ -396,7 +399,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Rafal Kozlowski.jpeg" alt="">
+                            <img src="img/team/Rafal Kozlowski.jpeg" alt="Rafał Kozłowski">
                         </div>
                     </div>
                     <div class="name">Rafał Kozłowski</div>
@@ -407,7 +410,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Dominik Kuropatwinski.jpg" alt="">
+                            <img src="img/team/Dominik Kuropatwinski.jpg" alt="Dominik Kuropatwiński">
                         </div>
                     </div>
                     <div class="name">Dominik Kuropatwiński</div>
@@ -418,7 +421,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Slavik Hryn.png" alt="">
+                            <img src="img/team/Slavik Hryn.png" alt="Slavik Hryn">
                         </div>
                     </div>
                     <div class="name">Slavik Hryn</div>
@@ -430,7 +433,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Kacper Stepien.jpg" alt="">
+                            <img src="img/team/Kacper Stepien.jpg" alt="Kacper Stępień">
                         </div>
                     </div>
                     <div class="name">Kacper Stępień</div>
@@ -440,18 +443,18 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Damian Chmielewski.jpg" alt="">
+                            <img src="img/team/Damian Chmielewski.jpg" alt="Damian Chmielewski">
                         </div>
                     </div>
                     <div class="name">Damian Chmielewski</div>
                     <div class="description">Witam, jestem Damian. Interesuje się informatyką, dlatego zdecydowałem
-                        się dołączyć do koła. Moim celem jest poszerzenie mojej wiedzy. Poza informatykąinteresuje się grami komputerowymi, piłką nożną oraz fotografią.</div>
+                        się dołączyć do koła. Moim celem jest poszerzenie mojej wiedzy. Poza informatyką interesuje się grami komputerowymi, piłką nożną oraz fotografią.</div>
                     <div class="rank">Członek koła</div>
                 </div>
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Piotr Szaruga.jpg" alt="">
+                            <img src="img/team/Piotr Szaruga.jpg" alt="Piotr Szaruga">
                         </div>
                     </div>
                     <div class="name">Piotr Szaruga</div>
@@ -479,7 +482,7 @@
             <div class="info-wrapper">
                 <button class="closeInfoBtn"><i class="fa-solid fa-xmark"></i></button>
                 <div class="info-img">
-                    <img class="desc-img" src="" alt="">
+                    <img class="desc-img" src="" alt="Contact us image">
                 </div>
                 <div class="info-description">
                     <div class="desc-name"></div>
@@ -493,7 +496,7 @@
 
     <section id="contact" class="contact_page">
         <div class="contact_page__title title">
-            <h1>Skontaktuj się z nami</h1>
+            <h2 class="sectionTitle">Skontaktuj się z nami</h2>
         </div>
         <div class="contact_page__content_background">
             <div class="contact_page__wrapper">
@@ -502,11 +505,11 @@
 
                     <div class="contact_page__info">
                         <div class="contact_page__info__mail">
-                            <img src="./img/mail.png">
+                            <img src="./img/mail.png" alt="mail icon">
                             <a href="mailto:kolopi@uthrad.pl">kolopi@uthrad.pl</a>
                         </div>
                         <div class="contact_page__info__number">
-                            <img src="./img/tele.svg">
+                            <img src="./img/tele.svg" alt="tele icon">
                             <a href="tel:500-113-995">500-113-995</a>
                         </div>
                     </div>
@@ -558,22 +561,20 @@
                         </form>
                     </div>
                 </div>
-                
-                
-            
+                  
         </div>
         </div>
     </section>
 
     <footer>
-        <img src="./img/logo/logoHQ.png" alt="">
+        <img src="./img/logo/logoHQ.png" alt="Koło PI logo">
 
         <div class="footer-content">
-            <h1>Koło PI</h1>
+            <h2>Koło PI</h2>
             <div class="footer-ContactBox">
                 <div class="contactBox-column">
-                    <h2>Kontakt</h2>
-                    <a class="link2" href="https://www.instagram.com/kolopi_uthrad/"><i class="fa-brands fa-instagram"></i> Nasz Instagram</a>
+                    <h3>Kontakt</h3>
+                    <a class="link2" href=""><i class="fa-brands fa-instagram"></i> Nasz Instagram</a>
                     <a class="link2" href="mailto:kolopi@uthrad.pl"><i class="fa-solid fa-envelope"></i> kolopi@uthrad.pl</a>
                     <a class="link2" href="tel:500-113-995"><i class="fa-sharp fa-solid fa-phone"></i> 500-113-995</a>
                 </div>
