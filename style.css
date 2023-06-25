@@ -219,6 +219,12 @@ body {
     color: var(--text-color);
 }
 
+.sectionTitle{
+    font-size: 5vw;
+    text-align: center;
+    color: var(--text-color);
+}
+
 .title .line-left {
     height: 5px;
     width: 30%;
@@ -353,13 +359,13 @@ nav .nav_links a.active:after {
     position: relative;
     color: white;
 }
-.header .header-text h1 {
+.header .header-text h2 {
     font-weight: 600;
     font-size: 5vw;
     color: #17597F;
     width: 100%;
 }
-.header .header-text h1 span {
+.header .header-text h2 span {
     color: #3787C4;
 }
 .header .header-text p {
@@ -413,7 +419,7 @@ nav .nav_links a.active:after {
     align-items: flex-start;
     flex-direction: column;
 }
-.about-us .text-wrapper h1 {
+.about-us .text-wrapper h2 {
     font-size: 5vw;
     color: #3787C4;
 }
@@ -493,7 +499,7 @@ nav .nav_links a.active:after {
     top: 1vw;
     left: 1vw;
 }
-.news-wrapper .content-wrapper .text-wrapper h1 {
+.news-wrapper .content-wrapper .text-wrapper h3 {
     color: #fff;
     text-align: left;
     font-size: 1.5vw;
@@ -573,7 +579,7 @@ nav .nav_links a.active:after {
     transition: 0.3s;
     position: relative;
 }
-.projects .projects-wrapper .projects-row .projects-box h1 {
+.projects .projects-wrapper .projects-row .projects-box h3 {
     font-size: 1.5vw;
     min-height: 8vw;
     color: var(--text-color);
@@ -853,6 +859,8 @@ nav .nav_links a.active:after {
 
 .contact_page__title {
     margin-bottom: 86px;
+    color: var(--text-color);
+    text-align: center;
 }
   
 .contact_page__wrapper {
@@ -973,7 +981,7 @@ footer .footer-content{
     gap: 2vw;
     flex-direction: column;
 }
-footer .footer-content h1{
+footer .footer-content h2{
     font-size: 4vw;
     color: white;
 }
@@ -986,7 +994,7 @@ footer .contactBox-column{
     flex-direction: column;
     gap: 1vw;
 }
-footer .footer-ContactBox h2{
+footer .footer-ContactBox h3{
     color: white;
 }
 footer .copyright{
@@ -1012,6 +1020,9 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 768px){
+    .sectionTitle{
+        font-size: 12vw;
+    }
     body{
         background:  var(--background-imageMobile), linear-gradient(180deg, var(--background-gradient-start) 40%, var(--background-gradient-middle) 72%, var(--background-gradient-end) 90%); 
         background-repeat: no-repeat;
@@ -1093,7 +1104,7 @@ footer .copyright{
         width: 90%;
         padding-left: unset;
     }
-    .header .header-text h1{
+    .header .header-text h2{
         font-size: 10vw;
     }
     .header .header-text p{
@@ -1115,7 +1126,7 @@ footer .copyright{
         width: 70%;
         padding: unset;
     }
-    .about-us .text-wrapper h1 {
+    .about-us .text-wrapper h2 {
         font-size: 12vw;
         position: absolute;
         top:20vw;
@@ -1153,7 +1164,7 @@ footer .copyright{
         top: 5vw;
         left: 5vw;
     }
-    .news-wrapper .content-wrapper .text-wrapper h1{
+    .news-wrapper .content-wrapper .text-wrapper h3{
         font-size: 6vw;
     }
     .news-wrapper .content-wrapper .text-wrapper p{
@@ -1183,7 +1194,7 @@ footer .copyright{
         width: 80%;
         padding: 6vw 5vw;
     }
-    .projects .projects-wrapper .projects-row .projects-box h1{
+    .projects .projects-wrapper .projects-row .projects-box h3{
         font-size: 5vw;
     }
     .projects .projects-wrapper .projects-row .projects-box p{
@@ -1271,7 +1282,7 @@ footer .copyright{
         gap: 12vw;
         flex-direction: column;
     }
-    footer .footer-content h1{
+    footer .footer-content h2{
         font-size: 15vw;
     }
     footer .footer-ContactBox{
@@ -1283,7 +1294,7 @@ footer .copyright{
     footer .contactBox-column{
         gap: 1vw;
     }
-    footer .footer-ContactBox h2{
+    footer .footer-ContactBox h3{
         font-size: 7vw;
     }
 }
