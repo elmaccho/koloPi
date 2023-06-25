@@ -343,7 +343,7 @@ nav .nav_links a.active:after {
     align-items: center;
     padding: 5vw 0 0 0;
 
-    background: linear-gradient(180deg, rgba(14, 46, 86, 0.392) -50%, var(--background-gradient-start)), url(./img/background.jpg);
+    background: linear-gradient(180deg, rgba(14, 46, 86, 0.392) -50%, var(--background-gradient-start)), url(./img/background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
@@ -876,7 +876,7 @@ nav .nav_links a.active:after {
 }
 
 .contact_page__content_background {
-    background-image: url(./img/macbook-2617705_1280\ \(1\).jpg);
+    background-image: url(./img/macbook-2617705_1280\ \(1\).webp);
     /* background-image: url(./img/337756812_225591340122314_1477293325260074961_n.png); */
     background-size: cover;
     background-repeat: no-repeat;
