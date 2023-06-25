@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Jesteśmy zespołem studentów Wydziału Transportu, Elektrotechniki i 
-    Informatyki UTH w Radomiu i oddanymi pasjonatami informatyki, których celem jest popularyzacja IT i 
-    cyberbezpieczeństwa - dołącz do nas!">
+    <meta name="description" content="Jesteśmy zespołem studentów Wydziału Transportu, Elektrotechniki i Informatyki UTH w Radomiu i oddanymi pasjonatami informatyki - dołącz do nas!">
 
     <title>Koło Pi - Pasjonaci Informatyki</title>
     <link rel="stylesheet" href="style.css">
@@ -54,14 +52,14 @@
             </p>
         </div>
         <div class="header-logo">
-            <img class="logoHQ" src="./img/logo/PiHQ.png" alt="Koło PI logo">
-            <img class="lines linesRotate" src="./img/logo/lines.png" alt="lines">
+            <img class="logoHQ" src="./img/logo/PiHQ.webp" alt="Koło PI logo">
+            <img class="lines linesRotate" src="./img/logo/lines.webp" alt="lines">
         </div>
     </section>
 
     <section id="aboutUs" class="about-us">
         <div class="img-wrapper">
-            <img src="./img/team/team.png" alt="zdjęcie grupowe koła PI">
+            <img src="./img/team/team.webp" alt="zdjęcie grupowe koła PI">
         </div>
         <div class="text-wrapper">
             <h2>O nas</h2>
@@ -102,7 +100,7 @@
 
                 <div class="news-box">
                         <div class="news-background">
-                                    <img src="./img/newsy/n4.png" alt="Newsy koło pi">
+                                    <img src="./img/newsy/n4.webp" alt="Newsy koło pi">
                         </div>
                         <div class="content-wrapper">
                                     <div class="text-wrapper">
@@ -114,7 +112,7 @@
         
                 <div class="news-box">
                     <div class="news-background">
-                                <img src="./img/newsy/n3.png" alt="Newsy koło pi">
+                                <img src="./img/newsy/n3.webp" alt="Newsy koło pi">
                     </div>
                     <div class="content-wrapper">
                                 <div class="text-wrapper">
@@ -129,7 +127,7 @@
 
                 <div class="news-box">
                     <div class="news-background">
-                                <img src="./img/newsy/n2.png" alt="Newsy koło pi">
+                                <img src="./img/newsy/n2.webp" alt="Newsy koło pi">
                     </div>
                     <div class="content-wrapper">
                                 <div class="text-wrapper">
@@ -143,7 +141,7 @@
 
                 <div class="news-box">
                     <div class="news-background">
-                                <img src="./img/newsy/n1.png" alt="Newsy koło pi">
+                                <img src="./img/newsy/n1.webp" alt="Newsy koło pi">
                     </div>
                     <div class="content-wrapper">
                                 <div class="text-wrapper">
@@ -192,7 +190,7 @@
                     </div>
     
                     <div class="photo">
-                        <img src="./img/proj 1.jpeg" alt="Projekt 1">
+                        <img src="./img/proj 1.webp" alt="Projekt 1">
                     </div>
     
                     <div class="hashtags">
@@ -214,7 +212,7 @@
                     </div>
     
                     <div class="photo">
-                        <img src="./img/thumbnail_proj 2.jpg" alt="Projekt 2">
+                        <img src="./img/thumbnail_proj 2.webp" alt="Projekt 2">
                     </div>
     
                     <div class="hashtags">
@@ -237,7 +235,7 @@
                     </div>
     
                     <div class="photo">
-                        <img src="./img/thumbnail_proj 3.jpg" alt="Projekt 3">
+                        <img src="./img/thumbnail_proj 3.webp" alt="Projekt 3">
                     </div>
     
                     <div class="hashtags">
@@ -258,7 +256,7 @@
                     </div>
     
                     <div class="photo">
-                        <img src="./img/thumbnail_proj 4.jpg" alt="Projekt 4">
+                        <img src="./img/thumbnail_proj 4.webp" alt="Projekt 4">
                     </div>
     
                     <div class="hashtags">
@@ -296,7 +294,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="./img/team/opiekun kola.jpg" alt="Opiekun koła PI">
+                            <img src="./img/team/opiekun kola.webp" alt="Opiekun koła PI">
                         </div>
                     </div>
                     <div class="name">Opiekun Koła <br> Porucznik</div>
@@ -307,7 +305,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Wiktor Wikalinski.jpg" alt="Wiktor Wikaliński">
+                            <img src="img/team/Wiktor Wikalinski.webp" alt="Wiktor Wikaliński">
                         </div>
                     </div>
                     <div class="name">Wiktor Wikaliński</div>
@@ -318,7 +316,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Zuzanna Wypchlo.jpg" alt="Zuzanna Wypchło">
+                            <img src="img/team/Zuzanna Wypchlo.webp" alt="Zuzanna Wypchło">
                         </div>
                     </div>
                     <div class="name">Zuzanna Wypchło</div>
@@ -329,7 +327,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Patryk Staniszewski.jpg" alt="Patryk Staniszewski">
+                            <img src="img/team/Patryk Staniszewski.webp" alt="Patryk Staniszewski">
                         </div>
                     </div>
                     <div class="name">Patryk Staniszewski</div>
@@ -343,7 +341,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Maciej Chojnacki.jpg" alt="Maciej Chojnacki">
+                            <img src="img/team/Maciej Chojnacki.webp" alt="Maciej Chojnacki">
                         </div>
                     </div>
                     <div class="name">Maciej Chojnacki</div>
@@ -354,7 +352,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Sebastian Sitek.jpg" alt="Sebastian Sitek">
+                            <img src="img/team/Sebastian Sitek.webp" alt="Sebastian Sitek">
                         </div>
                     </div>
                     <div class="name">Sebastian Sitek</div>
@@ -365,7 +363,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Kacper Zielinski.jpg" alt="Kacper Zieliński">
+                            <img src="img/team/Kacper Zielinski.webp" alt="Kacper Zieliński">
                         </div>
                     </div>
                     <div class="name">Kacper Zieliński</div>
@@ -376,7 +374,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Dawid Karsznia.png" alt="Dawid Karsznia">
+                            <img src="img/team/Dawid Karsznia.webp" alt="Dawid Karsznia">
                         </div>
                     </div>
                     <div class="name">Dawid Karsznia</div>
@@ -388,7 +386,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Krystian Glogowski.jpg" alt="Krystian Głogowski">
+                            <img src="img/team/Krystian Glogowski.webp" alt="Krystian Głogowski">
                         </div>
                     </div>
                     <div class="name">Krystian Głogowski</div>
@@ -399,7 +397,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Rafal Kozlowski.jpeg" alt="Rafał Kozłowski">
+                            <img src="img/team/Rafal Kozlowski.webp" alt="Rafał Kozłowski">
                         </div>
                     </div>
                     <div class="name">Rafał Kozłowski</div>
@@ -410,7 +408,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Dominik Kuropatwinski.jpg" alt="Dominik Kuropatwiński">
+                            <img src="img/team/Dominik Kuropatwinski.webp" alt="Dominik Kuropatwiński">
                         </div>
                     </div>
                     <div class="name">Dominik Kuropatwiński</div>
@@ -421,7 +419,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Slavik Hryn.png" alt="Slavik Hryn">
+                            <img src="img/team/Slavik Hryn.webp" alt="Slavik Hryn">
                         </div>
                     </div>
                     <div class="name">Slavik Hryn</div>
@@ -433,7 +431,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Kacper Stepien.jpg" alt="Kacper Stępień">
+                            <img src="img/team/Kacper Stepien.webp" alt="Kacper Stępień">
                         </div>
                     </div>
                     <div class="name">Kacper Stępień</div>
@@ -443,7 +441,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Damian Chmielewski.jpg" alt="Damian Chmielewski">
+                            <img src="img/team/Damian Chmielewski.webp" alt="Damian Chmielewski">
                         </div>
                     </div>
                     <div class="name">Damian Chmielewski</div>
@@ -454,7 +452,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="img/team/Piotr Szaruga.jpg" alt="Piotr Szaruga">
+                            <img src="img/team/Piotr Szaruga.webp" alt="Piotr Szaruga">
                         </div>
                     </div>
                     <div class="name">Piotr Szaruga</div>
@@ -567,7 +565,7 @@
     </section>
 
     <footer>
-        <img src="./img/logo/logoHQ.png" alt="Koło PI logo">
+        <img src="./img/logo/logoHQ.webp" alt="Koło PI logo">
 
         <div class="footer-content">
             <h2>Koło PI</h2>
