@@ -1004,6 +1004,30 @@ footer .copyright{
     text-align: center;
     bottom:0;
 }
+
+.timer{
+
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(0deg, var(--background-gradient-start) 0%, #06072ece 30%, var(--background-gradient-start) 100%), url(./img/books-1204029_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+.timer__countdown{
+    color: white;
+    font-size: 54px;
+}
+.timer__title{
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+}
+
 @media screen and (max-width: 920px) {
     nav .nav_links{
         gap: 2vw;
