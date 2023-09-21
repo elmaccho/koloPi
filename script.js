@@ -40,6 +40,11 @@ let currentProjectsIndex = 1;
 let countdownTo = new Date("2023-10-02T00:00:00")
 const timerCountdown = document.querySelector('.timer__countdown')
 
+const countdownDays = document.querySelector('.countdown__days')
+const countdownHours = document.querySelector('.countdown__hours')
+const countdownMinutes = document.querySelector('.countdown__minutes')
+const countdownSeconds = document.querySelector('.countdown__seconds')
+
 
 
 const team = [
@@ -339,16 +344,21 @@ const countDown = () => {
 
   if (remainingDate <= 0) {
     clearInterval(odliczanieInterval);
-    timerCountdown.innerHTML = `${remainingDays} dni ${remainingHours} godzin ${remainingMinutes} minut ${remainingSeconds} sekund`
+    // timerCountdown.innerHTML = `${remainingDays} dni ${remainingHours} godzin ${remainingMinutes} minut ${remainingSeconds} sekund`
+    countdownDays.innerHTML = `${remainingDays}`
     timerCountdown.style.color = "red"
   } else {
-    timerCountdown.innerHTML = `${remainingDays} dni ${remainingHours} godzin ${remainingMinutes} minut ${remainingSeconds} sekund`
+    countdownDays.innerHTML = `${remainingDays} dni`
+    countdownHours.innerHTML = `${remainingHours} godzin`
+    countdownMinutes.innerHTML = `${remainingMinutes} minut`
+    countdownSeconds.innerHTML = `${remainingSeconds} sekund`
+    // timerCountdown.innerHTML = `${remainingDays} dni ${remainingHours} godzin ${remainingMinutes} minut ${remainingSeconds} sekund`
   }
 
   if(remainingHours > 1 && remainingHours < 5){
-    timerCountdown.innerHTML = `${remainingDays} dni ${remainingHours} godziny ${remainingMinutes} minut ${remainingSeconds} sekund`
+    // timerCountdown.innerHTML = `${remainingDays} dni ${remainingHours} godziny ${remainingMinutes} minut ${remainingSeconds} sekund`
   } else if (remainingHours == 1){
-    timerCountdown.innerHTML = `${remainingDays} dni ${remainingHours} godzina ${remainingMinutes} minut ${remainingSeconds} sekund`
+    // timerCountdown.innerHTML = `${remainingDays} dni ${remainingHours} godzina ${remainingMinutes} minut ${remainingSeconds} sekund`
   }
 };
 

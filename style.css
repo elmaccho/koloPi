@@ -1020,12 +1020,12 @@ footer .copyright{
 }
 .timer__countdown{
     color: white;
-    font-size: 54px;
+    font-size: 4.5vw;
 }
 .timer__title{
     color: white;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 3.2vw;
 }
 
 @media screen and (max-width: 920px) {
@@ -1320,6 +1320,20 @@ footer .copyright{
     }
     footer .footer-ContactBox h3{
         font-size: 7vw;
+    }
+
+    .timer__countdown{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .timer__countdown{
+        font-size: 6.5vw;
+    }
+    .timer__title{
+        text-align: center;
+        font-size: 5.5vw;
     }
 }
 @media only screen and (max-width: 650px) {
