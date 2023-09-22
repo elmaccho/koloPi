@@ -57,6 +57,16 @@
         </div>
     </section>
 
+    <div class="timer">
+        <span class="timer__title">Do rozpoczęcia roku akademickiego zostało:</span>
+        <span class="timer__countdown">
+            <span class="countdown__days"></span>
+            <span class="countdown__hours"></span>
+            <span class="countdown__minutes"></span>
+            <span class="countdown__seconds"></span>
+        </span>
+    </div>
+
     <section id="aboutUs" class="about-us">
         <div class="img-wrapper">
             <img src="./img/team/team.webp" alt="zdjęcie grupowe koła PI">
