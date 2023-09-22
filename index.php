@@ -582,7 +582,7 @@
             <div class="footer-ContactBox">
                 <div class="contactBox-column">
                     <h3>Kontakt</h3>
-                    <a class="link2" href=""><i class="fa-brands fa-instagram"></i> Nasz Instagram</a>
+                    <a class="link2" href="https://www.instagram.com/kolopi_uthrad/"><i class="fa-brands fa-instagram"></i> Nasz Instagram</a>
                     <a class="link2" href="mailto:kolopi@uthrad.pl"><i class="fa-solid fa-envelope"></i> kolopi@uthrad.pl</a>
                     <a class="link2" href="tel:500-113-995"><i class="fa-sharp fa-solid fa-phone"></i> 500-113-995</a>
                 </div>
