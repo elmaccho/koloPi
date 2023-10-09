@@ -1,4 +1,3 @@
-<?php include 'sending.php'; ?>
 <!DOCTYPE html>
 <html lang="pl" data-theme="dark">
 <head>
@@ -17,6 +16,7 @@
 
 </head>
 <body>
+
     <button class="openNavBtn"><i class="fa-solid fa-bars"></i></button>
 
     <nav class="nav-toggle">
@@ -56,6 +56,16 @@
             <img class="lines linesRotate" src="./img/logo/lines.webp" alt="lines">
         </div>
     </section>
+
+    <div class="timer">
+        <span class="timer__title">Do rozpoczęcia roku akademickiego zostało:</span>
+        <span class="timer__countdown">
+            <span class="countdown__days"></span>
+            <span class="countdown__hours"></span>
+            <span class="countdown__minutes"></span>
+            <span class="countdown__seconds"></span>
+        </span>
+    </div>
 
     <section id="aboutUs" class="about-us">
         <div class="img-wrapper">
@@ -294,7 +304,7 @@
                 <div class="team-box">
                     <div class="circle">
                         <div class="inner-circle">
-                            <img src="./img/team/opiekun kola.webp" alt="Opiekun koła PI">
+                            <img src="./img/team/opiekunKola.webp" alt="Opiekun koła PI">
                         </div>
                     </div>
                     <div class="name">Opiekun Koła <br> Porucznik</div>
@@ -572,7 +582,7 @@
             <div class="footer-ContactBox">
                 <div class="contactBox-column">
                     <h3>Kontakt</h3>
-                    <a class="link2" href="https://www.instagram.com/kolopi_uthrad/"><i class="fa-brands fa-instagram"></i> Nasz Instagram</a>
+                    <a class="link2" href=""><i class="fa-brands fa-instagram"></i> Nasz Instagram</a>
                     <a class="link2" href="mailto:kolopi@uthrad.pl"><i class="fa-solid fa-envelope"></i> kolopi@uthrad.pl</a>
                     <a class="link2" href="tel:500-113-995"><i class="fa-sharp fa-solid fa-phone"></i> 500-113-995</a>
                 </div>
