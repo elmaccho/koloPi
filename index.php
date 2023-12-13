@@ -57,16 +57,6 @@
         </div>
     </section>
 
-    <div class="timer">
-        <span class="timer__title">Do rozpoczęcia roku akademickiego zostało:</span>
-        <span class="timer__countdown">
-            <span class="countdown__days"></span>
-            <span class="countdown__hours"></span>
-            <span class="countdown__minutes"></span>
-            <span class="countdown__seconds"></span>
-        </span>
-    </div>
-
     <section id="aboutUs" class="about-us">
         <div class="img-wrapper">
             <img src="./img/team/team.webp" alt="zdjęcie grupowe koła PI">
@@ -90,11 +80,19 @@
             <h2 class="sectionTitle">Aktualności</h2>
         </div>
         <div class="news-wrapper">
-                <!-- <div class="info">
-                    Chwilowo brak. Zalecamy uzbroić się w cierpliwość :)
-                </div> -->
-
             <div class="news-row">
+
+                <div class="news-box">
+                    <div class="news-background">
+                                <img src="./img/newsy/n6.webp" alt="Newsy koło pi">
+                    </div>
+                    <div class="content-wrapper">
+                                <div class="text-wrapper">
+                                    <h3>12.12.2023r</h3>
+                                    <p>Święta są jakże wspaniałym i wesołym czasem spotkań z rodziną i przyjaciółmi. Nie zapominajmy jednak o zachowaniu czujności podczas korzystania z internetu!</p>
+                                </div>
+                    </div>
+                </div>
 
                 <div class="news-box">
                     <div class="news-background">
@@ -120,6 +118,11 @@
                         </div>
                 </div>
         
+
+            </div>
+
+            <div class="news-row">
+                
                 <div class="news-box">
                     <div class="news-background">
                                 <img src="./img/newsy/n3.webp" alt="Newsy koło pi">
@@ -131,9 +134,6 @@
                                 </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="news-row">
 
                 <div class="news-box">
                     <div class="news-background">
@@ -161,10 +161,7 @@
                                 </div>
                     </div>
                 </div>
-    
-
             </div>
-
         </div>
         
         <button id="moreNews" class="seeMoreBtn">
