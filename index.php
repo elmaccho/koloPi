@@ -90,6 +90,7 @@
                                 <div class="text-wrapper">
                                     <h3>12.12.2023r</h3>
                                     <p>Święta są jakże wspaniałym i wesołym czasem spotkań z rodziną i przyjaciółmi. Nie zapominajmy jednak o zachowaniu czujności podczas korzystania z internetu!</p>
+                                    <a class="link" href="https://www.instagram.com/p/C0vzD8RI3Qf/?img_index=1"target="_blank" rel="noopener">Wpadnij na naszego instagrama!</a>
                                 </div>
                     </div>
                 </div>
